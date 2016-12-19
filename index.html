@@ -1,49 +1,109 @@
 <!DOCTYPE HTML>
-<html>
+<html class="BGDarkOcean">
 	<head>
 		<title>Kyle Johnson - Website Design and Software Dev</title>
-		<meta charset="utf-8" />
+		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script>
+			$("#menuBars").hide();
+			$(window).scroll(function() {
+				var window_top = $(window).scrollTop();
+    			var div_top = $('#sticky-anchor').offset().top;
+    			if (window_top > div_top)  {
+					$("#menuBars").fadeIn("slow");
+				}
+				else {
+					$("#menuBars").fadeOut("fast");
+				}
+			});
+	</script>
+	<script>
+		$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html, body').animate({
+					scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+				}
+			});
+		});
+</script>
 	</head>
 	<body>
+		<div id="menuBars">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
 						<div class="content">
-							<div class="inner">
 								<h1>Kyle Johnson</h1>
+								<div class="headerCircle"></div>
 								<p class="skills">Website Design</p>
-								<div id="websiteDesign">
-									<span class="fa-stack fa-lg">
-									<i class="fa fa-circle-thin fa-stack-2x"></i>
-									<i class="fa fa-lock fa-stack-1x"></i>
-									</span>
-								</div>
 								<p class="skills">Web Development</p>
 								<p class="skills">Branding</p>
-							</div>
 						</div>
-						<nav style="margin:3rem;">
+						<div id="sticky-anchor"></div>
+						<nav id="sticky" style="margin:1rem;">
 							<ul>
-								<li><a href="#aboutMe">About Me</a></li>
+								<li><a href="#aboutMe">About</a></li>
 								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#aboutMe">Services</a></li>
+								<li><a href="#contactMe">Contact</a></li>
 								<li><a href="#elements">Elements</a></li>
 							</ul>
 						</nav>
 					</header>
 					
+					<a name="aboutID"/>
 					<div id="aboutMe" class="mainDiv">
-						<h2 class="fancy"><span>About Me</span></h2>
+						<h2><span>About Me</span></h2>
 						<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et </p>
 					</div>
+
+					<div class="mainDiv">
+							<article id="contactMe">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+			</div>
 				<!-- Main -->
 					<div id="main">
 
