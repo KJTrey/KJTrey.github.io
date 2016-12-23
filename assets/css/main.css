@@ -1,135 +1,161 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
-	}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
-	body {
-		line-height: 1;
-	}
+body {
+	line-height: 1;
+}
 
-	ol, ul {
-		list-style: none;
-	}
+ol, ul {
+	list-style: none;
+}
 
-	.headerCircle {
-		width: 12rem;
-		height: 12rem;
-		line-height: 12rem;
-		border: solid 1px #ffffff;
-		border-radius: 100%;
-		margin: 0 auto;
-		background: url("../../images/faceOutline.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: contain;
-		-moz-transition: all 1.2s ease;
-    	-o-transition: all 1.2s ease;
-    	-webkit-transition: all 1.2s ease;
-    	transition: all 1.2s ease;
-		margin-bottom: 1.5rem;
-	}
-	
-	.headerCircle:hover {
-		background: url("../../images/faceColor.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: contain;
-	}
+.headerCircle {
+	width: 12rem;
+	height: 12rem;
+	line-height: 12rem;
+	border: solid 1px #ffffff;
+	border-radius: 100%;
+	margin: 0 auto;
+	background: url("../../images/faceOutline.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+	margin-bottom: 1.5rem;
+}
 
-	body {
-		-webkit-text-size-adjust: none;
-	}
-	
+.headerCircle:hover {
+	background: url("../../images/faceColor.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.learnMore {
+	display: none;
+	position:absolute;
+	top: 0;
+	right: 0;
+	height: auto;
+	width: 100px;
+	border: 2px solid black;
+	border-radius: 3px;
+	color: white;
+	background-color: #1c1c1c;
+}
+.skillsDiv:hover + .learnMore {
+	display: block;
+}
+
+.skills {
+	margin: .2rem;
+}
+
+.skillsDiv {
+	position: relative;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
 
 /* Box Model */
 
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 /* Basic */
 
-	@-ms-viewport {
-		width: device-width;
+@-ms-viewport {
+	width: device-width;
+}
+
+@media screen and (max-width: 480px) {
+
+	html, body {
+		min-width: 320px;
 	}
 
-	@media screen and (max-width: 480px) {
+}
 
-		html, body {
-			min-width: 320px;
-		}
+/* BACKGROUNDS */
+.BGDarkOcean {
+	background: #00000a url("../../images/deepOcean1.jpg"); 
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
-	}
+.darkSkies {
+	background: #141E30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}      
+.waves1 {
+	background: url("../../images/wavesUnder1.jpg");
+	background-size: 100%; 
+	background-repeat: no-repeat;
+}
+.waves2 {
+	background: url("../../images/wavesOver1.jpg");
+	background-size: 100%; 
+	background-repeat: no-repeat;
+}
+.waves3 {
+	background: url("../../images/deepOcean1.jpg");
+	background-size: 100%; 
+	background-repeat: no-repeat;
+	background: #141E30;
+}
+.waves4 {
+	background: url("../../images/seaLevel1.jpg");
+	background-size: 100%; 
+	background-repeat: no-repeat;
+}
 
-	.BGDarkOcean {
-		background: #00000a url("../../images/deepOcean1.jpg"); 
-    	background-repeat: no-repeat;
-		background-size: contain;
-	}
-
-	.darkSkies {
-		background: #141E30; /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	}      
-	.waves1 {
-		background: url("../../images/wavesUnder1.jpg");
-		background-size: 100%; 
-		background-repeat: no-repeat;
-	}
-	.waves2 {
-		background: url("../../images/wavesOver1.jpg");
-		background-size: 100%; 
-		background-repeat: no-repeat;
-	}
-	.waves3 {
-		background: url("../../images/deepOcean1.jpg");
-		background-size: 100%; 
-		background-repeat: no-repeat;
-		background: #141E30;
-	}
-	.waves4 {
-		background: url("../../images/seaLevel1.jpg");
-		background-size: 100%; 
-		background-repeat: no-repeat;
-	}
+.mainDiv {
+	width: 50%;
+	margin: 300px;
+}
+@media screen and (max-width: 736px) {
 	.mainDiv {
-		width: 50%;
-		margin: 300px;
+		width: 95%;
 	}
-	@media screen and (max-width: 736px) {
-		.mainDiv {
-			width: 95%;
-		}
+}
+	body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+		-moz-transition-delay: none !important;
+		-webkit-transition-delay: none !important;
+		-ms-transition-delay: none !important;
+		transition-delay: none !important;
 	}
-		body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-			-moz-transition-delay: none !important;
-			-webkit-transition-delay: none !important;
-			-ms-transition-delay: none !important;
-			transition-delay: none !important;
-		}
 
 /* Type */
 
@@ -236,17 +262,6 @@
     height: 1rem;
 	font-size: 1.5rem;
     z-index: 1;
-}
-
-.skills {
-	margin:.2rem;
-}
-#websiteDesign {
-	display: none;
-}
-    
-.skills:hover + #websiteDesign {
-    display: block;
 }
 
 
