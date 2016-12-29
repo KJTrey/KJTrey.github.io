@@ -12,7 +12,6 @@
 		max-width: 100%;
 		}
 
-
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -54,7 +53,7 @@
 
 .learnMore {
 	display: none;
-	position:absolute;
+	position:relative;
 	top: 0;
 	right: 0;
 	height: auto;
@@ -89,102 +88,152 @@
 	margin: 0;
 	padding: 0;
 }
-ul.work {
-	list-style-type: none;
-	margin: 0;
-	padding: 1rem;
-	text-align: center;
-	white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
-	width: 800px;
-	border: 1px solid white;
-	border-radius: 3px;
-}
 
-ul.work li {
-	display: inline-block;
-	height: 150px;
-	width: 175px;
-	position: relative;
-	-moz-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	-webkit-transition: all .2s ease; 
-	transition: all .2s ease;
+.beliefs {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
 }
-/*Work Scrollbar*/
-	ul.work::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-	}
-	ul.work::-webkit-scrollbar-button {
-	width: 5px;
-	height: 5px;
-	}
-	ul.work::-webkit-scrollbar-thumb {
-	background: white;
-	border-radius: 2px;
-	-moz-transition: all 1.2s ease;
-	-o-transition: all 1.2s ease;
-	-webkit-transition: all 1.2s ease;
-	transition: all 1.2s ease;
-	}
-	ul.work::-webkit-scrollbar-thumb:hover {
-	background: white;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-	}
-	ul.work::-webkit-scrollbar-thumb:active {
-	background: white;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-	}
-	ul.work::-webkit-scrollbar-track {
-	background: #000000;
-	border-top: 1px solid white;
-	border-radius: 0px;
-	}
-	ul.work::-webkit-scrollbar-track:hover {
-	background: #000000;
-	}
-	ul.work::-webkit-scrollbar-track:active {
-	background: #000000;
-	}
-	ul.work::-webkit-scrollbar-corner {
-	background: transparent;
-	}
-span.text-content {
-  background: rgba(0,0,0,0.8);
+.belief {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  cursor: pointer;
-  display: table;
+  width: 24.5%;
+  min-width: 150px;
   height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 175px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+  position:relative;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.2)
 }
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  max-width: 175px;
-  max-height: 150px;
-  padding-left: 11px;
+
+.belief i {
+	color: rgba(255, 255, 255, 0.2);
+	font-size: 150px;
+	position: absolute;
+	bottom: -20px;
+	right:0;
+	line-height: 1;
 }
-span.text-content span i {
-	font-weight: bold;
-	font-style: normal;
-}
-ul.work li:hover span.text-content {
-  opacity: 1;
-}
+span.text-belief {
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	font-size: .9rem;
+	display: table-cell;
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	font-style: italic;
+	text-align: left;
+	vertical-align: top;
+	}
+	span.text-belief span {
+		font-size: 1.1rem;
+		font-weight: 300;
+		font-style: normal;
+		text-transform: uppercase;
+		border-bottom: 1px dashed white;
+	}
+
+/* Work Display */
+	ul.work {
+		list-style-type: none;
+		margin: 0;
+		padding: 1rem;
+		text-align: center;
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: 800px;
+		border: 1px solid white;
+		border-radius: 3px;
+	}
+
+	ul.work li {
+		display: inline-block;
+		height: 150px;
+		width: 175px;
+		position: relative;
+		-moz-transition: all .2s ease;
+		-o-transition: all .2s ease;
+		-webkit-transition: all .2s ease; 
+		transition: all .2s ease;
+	}
+	/*Work Scrollbar*/
+		ul.work::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+		}
+		ul.work::-webkit-scrollbar-button {
+		width: 5px;
+		height: 5px;
+		}
+		ul.work::-webkit-scrollbar-thumb {
+		background: white;
+		border-radius: 2px;
+		-moz-transition: all 1.2s ease;
+		-o-transition: all 1.2s ease;
+		-webkit-transition: all 1.2s ease;
+		transition: all 1.2s ease;
+		}
+		ul.work::-webkit-scrollbar-thumb:hover {
+		background: white;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+		}
+		ul.work::-webkit-scrollbar-thumb:active {
+		background: white;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+		}
+		ul.work::-webkit-scrollbar-track {
+		background: #000000;
+		border-top: 1px solid white;
+		border-radius: 0px;
+		}
+		ul.work::-webkit-scrollbar-track:hover {
+		background: #000000;
+		}
+		ul.work::-webkit-scrollbar-track:active {
+		background: #000000;
+		}
+		ul.work::-webkit-scrollbar-corner {
+		background: transparent;
+		}
+	span.text-content {
+	background: rgba(0,0,0,0.8);
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+	display: table;
+	height: 150px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 175px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+	}
+	span.text-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	max-width: 175px;
+	max-height: 150px;
+	padding-left: 11px;
+	}
+	span.text-content span i {
+		font-weight: bold;
+		font-style: normal;
+	}
+	ul.work li:hover span.text-content {
+	opacity: 1;
+	}
 
 /* Box Model */
 
@@ -266,6 +315,7 @@ ul.work li:hover span.text-content {
 	.mainDiv {
 		width: 65%;
 		margin: 270px;
+		padding-top: 1rem;
 	}
 	@media screen and (max-width: 736px) {
 		.mainDiv {
