@@ -105,7 +105,11 @@
   height: 150px;
   position:relative;
   display: inline-flex;
-  background-color: rgba(255, 255, 255, 0.2)
+  background-color: rgba(255, 255, 255, 0.2);
+  -moz-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
 }
 
 .belief i {
@@ -115,6 +119,18 @@
 	bottom: -20px;
 	right:0;
 	line-height: 1;
+	z-index: 50;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+}
+.belief:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.belief:hover i {
+	z-index: 1;
+	color: rgba(255, 255, 255, 0.1);
 }
 span.text-belief {
 	color: #ffffff;
