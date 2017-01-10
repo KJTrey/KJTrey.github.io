@@ -1,5 +1,8 @@
 @-webkit-keyframes bugfix { from { padding: 0; } to { padding: 0; } }
-
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubunti-R.ttf')  format('truetype');
+}
 
 .loginIntro {
   padding: 7em 2em 1em 2em;
