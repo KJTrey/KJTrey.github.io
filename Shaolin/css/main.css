@@ -152,7 +152,7 @@ ul {
     background: -moz-radial-gradient(#999999, #666666); /* For Firefox 3.6 to 15 */
     background: radial-gradient(#999999, #666666); /* Standard syntax */	
     -webkit-font-smoothing: antialiased;
-    font-family: Ubuntu, 'Helvetica Neue', sans-serif;
+    font-family:'Ubuntu', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 400;
     height: 100%;
@@ -485,7 +485,7 @@ body {
 .lessonPage {
   background-color: whitesmoke;
   color: black;
-  font-family: Ubuntu, 'Helvetica Neue', sans-serif;
+  font-family:' Ubuntu', 'Helvetica Neue', sans-serif;
   text-decoration: none;
 }
 a, a:visited, a:hover, a:active {
@@ -494,7 +494,7 @@ a, a:visited, a:hover, a:active {
 }
 a#mm {
   border-bottom: 1px solid lightgrey;
-  font-family: Ubuntu, 'Helvetica Neue', sans-serif;  
+  font-family:' Ubuntu', 'Helvetica Neue', sans-serif;  
 }
 
 /* In page requirement buttons */
@@ -894,7 +894,7 @@ a#reqBlack:hover {
     background: -moz-radial-gradient(#999999, #666666); /* For Firefox 3.6 to 15 */
     background: radial-gradient(#999999, #666666); /* Standard syntax */	
     -webkit-font-smoothing: antialiased;
-    font-family: Ubuntu, 'Ubuntu', 'Helvetica Neue', sans-serif;
+    font-family:'Ubuntu', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 400;
     height: auto !important;
@@ -919,7 +919,7 @@ div.wrapper {
 }
 
 p {
-  font-family: Ubuntu, georgia;
+  font-family:' Ubuntu', georgia;
   font-size: 1rem;
   line-height: 25px;
   margin: 24px 0;
@@ -1004,7 +1004,7 @@ nav.vertical {
       nav.vertical > ul > li.mainMenuItem > label > h2 {
         margin-top: -20px;
         margin-bottom: 20px;
-        font-family: Ubuntu, 'Helvetica Neue', sans-serif;
+        font-family:' Ubuntu', 'Helvetica Neue', sans-serif;
         color: rgb(255,255,255);
         display: block;
         font-size: .85rem;
@@ -1048,7 +1048,7 @@ nav.vertical {
       }
       nav.vertical > ul > li.white > label > div.under {
         letter-spacing: .5rem;
-        font-family: Ubuntu;
+        font-family:' Ubuntu';
         font-weight:normal;
         padding: .25rem;
         display: inline;
@@ -1701,8 +1701,8 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Ubuntu,'Ubuntu','Helvetica Neue',sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:Ubuntu,'Helvetica Neue',Arial,sans-serif}
+html,body{font-family:'Ubuntu','Helvetica Neue',sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:'Ubuntu','Helvetica Neue',Arial,sans-serif}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:"Times New Roman",Times,serif}
 h2,h3,h4,h6{font-weight:400;margin:5px 0}.w3-wide{letter-spacing:4px}
@@ -1890,7 +1890,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-container{padding:0.01em 16px}
 .w3-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
 .w3-example{background-color:#f1f1f1;padding:0.01em 16px}
-.w3-code,.w3-codespan{font-family:Ubuntu,'Helvetica Neue',"courier new";font-size:16px}
+.w3-code,.w3-codespan{font-family:'Ubuntu', Helvetica Neue,"courier new";font-size:16px}
 .w3-code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .w3-example,.w3-code{margin:20px 0}.w3-card{border:1px solid #ccc}
