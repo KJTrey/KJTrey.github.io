@@ -162,15 +162,16 @@ span.text-belief {
 		white-space: nowrap;
 		overflow-x: auto;
 		overflow-y: hidden;
-		width: 800px;
+		width: 1000px;
+		max-width: 90%;
 		border: 1px solid white;
 		border-radius: 3px;
 	}
 
 	ul.work li {
 		display: inline-block;
-		height: 150px;
-		width: 175px;
+		height: 200px;
+		width: 250px;
 		position: relative;
 		-moz-transition: all .2s ease;
 		-o-transition: all .2s ease;
@@ -222,11 +223,11 @@ span.text-belief {
 	font-size: 1rem;
 	cursor: pointer;
 	display: table;
-	height: 150px;
+	height: 200px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 175px;
+	width: 250px;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
@@ -237,8 +238,8 @@ span.text-belief {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	max-width: 175px;
-	max-height: 150px;
+	max-width: 250px;
+	max-height: 200porpx;
 	padding-left: 11px;
 	}
 	span.text-content span i {
