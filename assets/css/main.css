@@ -50,6 +50,12 @@
 		background-size: contain;
 	}
 
+.container {
+	color: black;
+	font-family: 'Special Elite', Courier New, Courier, monospace;
+	display: inline-block;
+	font-size: 1rem;
+}
 .learnMore {
 	display: none;
 	position:relative;
@@ -88,21 +94,33 @@
 #myName p {
 	margin: 0;
 	padding: 0;
+	color: white;
 }
 
 .case1 {
 	width:100%;
-	margin: 1rem;
+	margin: 4rem;
+	position: relative;
+	display: block;
 }
 .case1 img {
 	max-width: 38%;
 	float: left;
-	margin: none;
+	margin: 1rem;
 	padding:none;
 }
 .case1 p {
 	margin:1rem;
 	padding:1rem;
+	font-size: 20px;
+}
+.caseHeader {
+	width: 100%;
+	padding: 1rem;
+	font-size: 1rem;
+}
+.caseHeader > div > h1 > span {
+	border-bottom: 1px solid black;
 }
 
 
@@ -320,6 +338,12 @@ span.text-belief {
 	}
 	.caseBG h1, h2, h3, p, html, body {
 		color: black;
+	}
+	.caseBG h1, h2, h3 {
+		font-family: "Source Sans Pro", sans-serif;
+		letter-spacing: 0;
+		font-weight: 400;
+		text-transform: none;
 	}
 	.darkSkies {
 		background: #141E30; /* fallback for old browsers */
