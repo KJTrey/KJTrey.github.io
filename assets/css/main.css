@@ -52,9 +52,13 @@
 
 .container {
 	color: black;
-	font-family: 'Special Elite', Courier New, Courier, monospace;
+	font-family: "Courier New", Courier, monospace;
 	display: inline-block;
 	font-size: 1rem;
+}
+.cSpan {
+	font-weight: 700;
+	font-size: 1.5rem;
 }
 .learnMore {
 	display: none;
@@ -105,7 +109,6 @@
 }
 .case1 img {
 	max-width: 38%;
-	float: left;
 	margin: 1rem;
 	padding:none;
 }
@@ -118,9 +121,6 @@
 	width: 100%;
 	padding: 1rem;
 	font-size: 1rem;
-}
-.caseHeader > div > h1 > span {
-	border-bottom: 1px solid black;
 }
 
 
