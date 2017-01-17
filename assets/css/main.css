@@ -76,17 +76,20 @@
 }
 
 .skills {
-	margin: .2rem;
+	margin: none;
+	padding: none;
 }
 
 .skillsDiv {
 	position: relative;
-	margin: 1rem;
+	margin: none;
+	text-align: center;
 }
 #myName p {
 	margin: 0;
 	padding: 0;
 }
+
 
 .beliefs {
   width: 100%;
@@ -1409,7 +1412,7 @@ span.text-belief {
 			-ms-transition: max-width 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 			transition: max-width 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 			max-width: 100%;
-			padding: 1rem 5rem;		
+			padding: 1rem 3rem;		
 			margin-bottom: 1.5rem;
 		}
 

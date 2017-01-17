@@ -1,1 +1,0 @@
-<?php require 'sitecake/2.3.6/src/app.php';
