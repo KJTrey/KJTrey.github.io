@@ -90,6 +90,21 @@
 	padding: 0;
 }
 
+.case1 {
+	width:100%;
+	margin: 1rem;
+}
+.case1 img {
+	max-width: 38%;
+	float: left;
+	margin: none;
+	padding:none;
+}
+.case1 p {
+	margin:1rem;
+	padding:1rem;
+}
+
 
 .beliefs {
   width: 100%;
@@ -299,7 +314,13 @@ span.text-belief {
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-
+	.caseBG {
+		background-color: white;
+		color: black;
+	}
+	.caseBG h1, h2, h3, p, html, body {
+		color: black;
+	}
 	.darkSkies {
 		background: #141E30; /* fallback for old browsers */
 		background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
