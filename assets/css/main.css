@@ -54,11 +54,18 @@
 	color: black;
 	font-family: "Courier New", Courier, monospace;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	margin: 0;
+	padding: 0;
 }
-.cSpan {
+span.cSpan {
 	font-weight: 700;
 	font-size: 1.5rem;
+	border-bottom: 1px solid black;
+	font-family: "Courier New", Courier, monospace;
+}
+.caseHeader h1 {
+	margin:0;
 }
 .learnMore {
 	display: none;
@@ -100,30 +107,124 @@
 	padding: 0;
 	color: white;
 }
-
+.case {
+	position: relative
+}
 .case1 {
 	width:100%;
-	margin: 4rem;
+	margin: 0;
+	height:auto;
+	overflow: auto;
+	margin-top: 4rem;
 	position: relative;
 	display: block;
+	background-color: #141E30;
+	color: white;
 }
-.case1 img {
-	max-width: 38%;
+.case1 div.caseimg {
+	max-width: 45%;
 	margin: 1rem;
 	padding:none;
+	float: left;
+	display: block;
 }
 .case1 p {
-	margin:1rem;
+	margin-left: 45%;
 	padding:1rem;
 	font-size: 20px;
+	color: white;
+}
+.sub{
+    position:absolute;
+    left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto;
+  	width: 120px;
+	text-align: center;
+    top:-26px;
+    z-index:999999;
+}
+.arrow_box {
+	position: relative;
+	background: #f5ab16;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-top-color: #f5ab16;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.arrow_box:before {
+	border-width: 16px;
+	margin-left: -16px;
 }
 .caseHeader {
 	width: 100%;
-	padding: 1rem;
+	padding: 0 1rem 0 1rem;
 	font-size: 1rem;
+	margin: 0 1rem 0 1rem;
+}
+img#center {
+	width: 75%;
+	margin: 0 auto;
+	display: block;
+}
+header#workHeader {
+	height: 50px;
+	width: 100%;
+	background-color: #141E30;
+	font-family: "Source Sans Pro", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+header#workHeader > p {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	padding-top: 11px;
 }
 
-
+@media only screen and (max-width: 768px) {
+    img#center {
+        width: 100%;
+    	margin: 0 auto;
+    }
+	.sub {
+		top:-24px;
+	}
+	.case1 div.caseimg {
+		max-width: 95%;
+	}
+	.case1 p {
+		margin:0;
+	}
+}
+.left-div {
+    float: left;
+    width: 48%;
+    height: 20px;
+    margin-right: .5rem;
+}
+.right-div {
+    margin-left: 50%;
+	text-align: right;
+	margin-right: .5rem;
+}
 .beliefs {
   width: 100%;
   margin: 0 auto;
