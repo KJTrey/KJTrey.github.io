@@ -131,8 +131,9 @@ span.cSpan {
 .case1 p {
 	margin-left: 45%;
 	padding:1rem;
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
+	padding: 1rem;
 }
 .sub{
     position:absolute;
