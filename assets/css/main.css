@@ -365,7 +365,7 @@ span.text-belief {
 	position: absolute;
 	top: 0;
 	width: 250px;
-	opacity: 0;
+	opacity: 1;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
 	-o-transition: opacity 500ms;
@@ -384,7 +384,7 @@ span.text-belief {
 		font-style: normal;
 	}
 	ul.work li:hover span.text-content {
-	opacity: 1;
+	opacity: 0;
 	}
 
 /* Box Model */
