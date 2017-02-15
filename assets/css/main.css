@@ -478,7 +478,7 @@ span.text-belief {
 /* mainDivs 100%width on Mobile*/
 	.mainDiv {
 		width: 65%;
-		margin: 270px;
+		margin: 100px;
 		padding-top: 1rem;
 	}
 	@media screen and (max-width: 736px) {
