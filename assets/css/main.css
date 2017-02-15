@@ -293,7 +293,23 @@ span.text-belief {
 		text-transform: uppercase;
 		border-bottom: 1px dashed white;
 	}
+	#leftArrow {
+		position: absolute;
+		top: 45%;
+		left: -30px;
+	}
+	#rightArrow {
+		position: absolute;
+		top: 45%;
+		right: -30px;
+	}
 /* Work Display */
+	.workContainer {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+	}
 	ul.work {
 		list-style-type: none;
 		margin: 0;
@@ -303,7 +319,7 @@ span.text-belief {
 		overflow-x: auto;
 		overflow-y: hidden;
 		width: 1000px;
-		max-width: 90%;
+		max-width: 100%;
 		border: 1px solid white;
 		border-radius: 3px;
 	}
@@ -486,7 +502,11 @@ span.text-belief {
 	}
 	@media screen and (max-width: 736px) {
 		.mainDiv {
-			width: 95%;
+			width: 90%;
+		}
+		.workContainer {
+			max-width: 90%;
+			margin: 0 auto;
 		}
 	}
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {

@@ -5,6 +5,7 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="assets/js/main.js" type="text/javascript"></script>
@@ -102,26 +103,29 @@
 						<p style="color: white;">I'm doing by best to execute on these beliefs and equip myself with the neccassary <a href="#skills">skills</a> to build beautiful and responsive websites suited for the modern age. You can learn more about that in the <a href="#services">services</a> section or go ahead and check out the <a href="#work">work</a> I've done so far.</p>
 					</div>
 
-					<div id="work">
+					<div id="work" class="mainDiv">
 						<h2>Work</h2>
-						<p> If you want to know more about what I can offer check out the <a href="#services">services</a> section.
-					    <ul class="work">
-							<li><a href="#">
-								<img src="images/ShaolinPhoneSolo.png" width="250" height="200"/>
-								<span class="text-content"><span><i>Shaolin Kempo Arts</i><br>Companion Web App</span></span>
-							</a></li>
-							<li><a href="#">
-								<img src="images/NinjaCampNewSolo.png" width="250" height="200"/>
-								<span class="text-content"><span><i>Carmel Valley Ninja Camp</i><br>Camp Registration Site</span></span>						
-							</a></li>
-							<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/>
-								<span class="text-content"><span><i>Best Games NBA</i><br>Notifcation Service</span></span>	
-							</a></li>
-							<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
-							<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
-							<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
-							<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
-						</ul>
+						<div class="workContainer">
+							<i id="leftArrow" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+							<i id="rightArrow" class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+							<ul class="work">
+								<li><a href="#">
+									<img src="images/ShaolinPhoneSolo.png" width="250" height="200"/>
+									<span class="text-content"><span><i>Shaolin Kempo Arts</i><br>Companion Web App</span></span>
+								</a></li>
+								<li><a href="#">
+									<img src="images/NinjaCampNewSolo.png" width="250" height="200"/>
+									<span class="text-content"><span><i>Carmel Valley Ninja Camp</i><br>Camp Registration Site</span></span>						
+								</a></li>
+								<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/>
+									<span class="text-content"><span><i>Best Games NBA</i><br>Notifcation Service</span></span>	
+								</a></li>
+								<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
+								<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
+								<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
+								<li><a href="#"><img src="http://www.google.com.au/intl/en_com/images/srpr/logo1w.png" width="250" height="200"/></a></li>
+							</ul>
+						</div>
 					</div>
 
 					<div class="mainDiv">
@@ -161,6 +165,20 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+						$("#leftArrow").click(function () { 
+							var leftPos = $('.work').scrollLeft();
+						$(".work").animate({scrollLeft: leftPos - 500}, 300);
+						});
+
+						$("#rightArrow").click(function () { 
+							var leftPos = $('.work').scrollLeft();
+						$(".work").animate({scrollLeft: leftPos + 500}, 300);
+					});
+				});
+			</script>
 	</body>
 </html>
