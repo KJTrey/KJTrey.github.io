@@ -303,6 +303,14 @@ span.text-belief {
 		bottom: 100px;
 		right: -30px;
 	}
+	.childDiv {
+		z-index: 5000000px;
+		border-top: 2px solid black;
+	}
+	.inner {
+		color: white;
+		font-family: "Source Sans Pro", sans-serif;
+	}
 /* Work Display */
 	.mainWork {
 		width: 100%;
@@ -1158,7 +1166,8 @@ span.text-belief {
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			margin-left: 0.25em;
+			margin-right: 0.25em;
 		}
 
 		ul.alt {
