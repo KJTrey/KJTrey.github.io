@@ -104,17 +104,18 @@
 					</div>
 
 					<div id="work" class="mainDiv">
-						<h2>Work</h2>
+						<h2 style="color: #001834; z-index: 9000000">Work</h2>
+						<div id="background-work"></div>
 						<div class="col-sm-8 col-xs-12">
-							<img id="mainPort" class="img-fluid" src="images/NinjaCampNewAll.png"/>
+							<img id="mainPort" class="img-fluid" src="images/NinjaCampShowcase.png"/>
 						</div>
-						<div class="col-sm-4 col-xs-12" style="color: white;">
-							<h3 class="inner first">Hello</h3>
-							<p class="inner second">Features</p>
-							<ul class="inner third">
-								<li type="disc">1st Feature</li>
-								<li type="disc">2nd Feature</li>
-								<li type="disc">3rd Feature</li>
+						<div class="col-sm-4 col-xs-12">
+							<h3 class="inner first">Shaolin Kempo Arts</h3>
+							<p class="inner second"><span>Features</span></p>
+							<ul>
+								<li class="inner feature1" type="disc">1st Feature</li>
+								<li class="inner feature2" type="disc">2nd Feature</li>
+								<li class="inner feature3" type="disc">3rd Feature</li>
 							</ul>
 						</div>
 						<div class="workContainer">
@@ -194,18 +195,25 @@
 					$(function() {
 						$('#port1').click(function(){
 							$("#mainPort").attr('src',"images/shaolinPhone.png");
-							$("h3.first" ).replaceWith( "<h3 class='inner first'>New heading</h2>" );
+							$("h3.first" ).replaceWith( "<h3 class='inner first'>Shaolin Kempo Arts</h2>" );
+							$("li.feature1" ).replaceWith( "<li class='inner feature1' type='disc'>Mobile-First Hybrid Web Application</li>" );
+							$("li.feature2" ).replaceWith( "<li class='inner feature2' type='disc'>Intuitive Navigation For 30+ pages</li>" );
+							$("li.feature3" ).replaceWith( "<li class='inner feature3' type='disc'>Training Videos For All Ages and Belt Colors</li>" );
 						});
 					});
 					$(function() {
 						$('#port2').click(function(){
-							$("#mainPort").attr('src',"images/NinjaCampNewAll.png");
+							$("#mainPort").attr('src',"images/NinjaCampShowcase.png");
+							$("h3.first" ).replaceWith( "<h3 class='inner first'>Ninja Camp</h2>" );
+							$("li.feature1" ).replaceWith( "<li class='inner feature1' type='disc'>Responsive And Elegant Design</li>" );
+							$("li.feature2" ).replaceWith( "<li class='inner feature2' type='disc'>Info, Photo Gallery, and FAQ Pages</li>" );
+							$("li.feature3" ).replaceWith( "<li class='inner feature3' type='disc'>Custom Registration Page With Secure Payment Processing</li>" );
 						});
 					});
 					$(function() {
 						$('.childDiv').click(function(){
-							$(this).parent().find('.childDiv').css('border-top','2px solid black');
-							$(this).css('border-top','2px solid white');
+							$(this).parent().find('.childDiv').css('border-top','2px solid white');
+							$(this).css('border-top','2px solid #001834');
 						});
 					});
 				});
