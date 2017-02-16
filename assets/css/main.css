@@ -304,6 +304,14 @@ span.text-belief {
 		right: -30px;
 	}
 /* Work Display */
+	.mainWork {
+		width: 100%;
+		height: 350px;
+	}
+	#mainPort {
+		width: 500px;
+		height: 254px;
+	}
 	.workContainer {
 		position: relative;
 		margin: 0;
@@ -320,7 +328,6 @@ span.text-belief {
 		overflow-y: hidden;
 		width: 1000px;
 		max-width: 100%;
-		border: 1px solid white;
 		border-radius: 3px;
 	}
 
@@ -337,11 +344,11 @@ span.text-belief {
 	/*Work Scrollbar*/
 		ul.work::-webkit-scrollbar {
 		width: 10px;
-		height: 10px;
+		height: 1px;
 		}
 		ul.work::-webkit-scrollbar-button {
 		width: 5px;
-		height: 5px;
+		height: 1px;
 		}
 		ul.work::-webkit-scrollbar-thumb {
 		background: rgba(255, 255, 255, 0.5);
@@ -359,7 +366,6 @@ span.text-belief {
 		}
 		ul.work::-webkit-scrollbar-track {
 		background: #000000;
-		border-top: 1px solid white;
 		border-radius: 0px;
 		}
 		ul.work::-webkit-scrollbar-track:hover {
