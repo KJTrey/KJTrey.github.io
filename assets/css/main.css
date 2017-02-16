@@ -202,7 +202,12 @@ header#workHeader > p {
 	letter-spacing: .3rem;
 	padding-top: 11px;
 }
-
+#work {
+	width: 100%;
+	padding: 4rem 17%;
+	background-color: white;
+	color: #001834;
+}
 @media only screen and (max-width: 768px) {
     img#center {
         width: 100%;
@@ -216,6 +221,9 @@ header#workHeader > p {
 	}
 	.case1 p {
 		margin:0;
+	}
+	#work {
+	padding: 0 2rem;
 	}
 }
 .left-div {
@@ -335,9 +343,9 @@ span.text-belief {
 		position: absolute;
 		background-color: white;
 		color: #001834;
-		left: -1000px;
+		left: -30%;
 		top: 0px;
-		min-width: 400%;
+		min-width: 160%;
 		height: 700px;
 	}
 	.mainWork {
