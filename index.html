@@ -83,24 +83,24 @@
 						<p style="color: white;">I'm currently a student studying computer science and trying to gain experience by creating my own personal projects and helping others by building their websites/apps. I started programming at around age 16 building websites, and soon after that developing two apps for iPhone. Since then I've been learning multiple other programming languages to evolve into a talented full stack developer. I'm continuing to learn advanced responsive web design using HTML5, CSS3, and JavaScript, as well building on my knowledge of backend technologies such as PHP, MySQL, Java, and Python.</p>
 						<h3 style="margin-bottom: 0; margin-top: 1rem; text-align:center;">My Values</h3>
 						<div class="beliefs">
-							<div class="belief">
+							<div class="belief col-xs-12 col-sm-5 col-md-2">
 								<span class="text-belief"><span>Value</span><br>I'm passionate about providing value to the world and helping the people I work with do the same.</span>
 								<i>1</i>
 							</div>
-							<div class="belief">
+							<div class="belief col-xs-12 col-sm-5 col-md-2">
 								<span class="text-belief"><span>Communication</span><br>Effectively collaborating on ideas is the key to achieving a product everyone is satisfied with.</span>
 								<i>2</i>
 							</div>
-							<div class="belief">
+							<div class="belief col-xs-12 col-sm-5 col-md-2">
 								<span class="text-belief"><span>Effort</span><br>Nothing good comes easy and building a good product takes time and focus.</span>
 								<i>3</i>
 							</div>
-							<div class="belief">
+							<div class="belief col-xs-12 col-sm-5 col-md-2">
 								<span class="text-belief"><span>Joy</span><br>Enjoying your work increases creativity and workflow, and results in a better product.</span>
 								<i>4</i>
 							</div>
 						</div>
-						<p style="color: white;">I'm doing by best to execute on these beliefs and equip myself with the neccassary <a href="#skills">skills</a> to build beautiful and responsive websites suited for the modern age. You can learn more about that in the <a href="#services">services</a> section or go ahead and check out the <a href="#work">work</a> I've done so far.</p>
+						<p class="col-xs-12" style="color: white;">I'm doing by best to execute on these beliefs and equip myself with the neccassary <a href="#skills">skills</a> to build beautiful and responsive websites suited for the modern age. You can learn more about that in the <a href="#services">services</a> section or go ahead and check out the <a href="#work">work</a> I've done so far.</p>
 					</div>
 
 					<div id="work" class="mainDiv">
@@ -112,10 +112,11 @@
 							<h3 class="inner first">Shaolin Kempo Arts</h3>
 							<p class="inner second"><span>Features</span></p>
 							<ul>
-								<li class="inner feature1" type="disc">1st Feature</li>
-								<li class="inner feature2" type="disc">2nd Feature</li>
-								<li class="inner feature3" type="disc">3rd Feature</li>
+								<li class="inner feature1">&#8226; 1st Feature</li>
+								<li class="inner feature2">&#8226; 2nd Feature</li>
+								<li class="inner feature3">&#8226; 3rd Feature</li>
 							</ul>
+							<div class="inner"><a href="projects/shaolin.html" class="third"><span>Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a></div>
 						</div>
 						<div class="workContainer">
 							<i id="leftArrow" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
@@ -195,18 +196,18 @@
 						$('#port1').click(function(){
 							$("#mainPort").attr('src',"images/shaolinPhone.png");
 							$("h3.first" ).replaceWith( "<h3 class='inner first'>Shaolin Kempo Arts</h2>" );
-							$("li.feature1" ).replaceWith( "<li class='inner feature1' type='disc'>Mobile-First Hybrid Web Application</li>" );
-							$("li.feature2" ).replaceWith( "<li class='inner feature2' type='disc'>Intuitive Navigation For 30+ pages</li>" );
-							$("li.feature3" ).replaceWith( "<li class='inner feature3' type='disc'>Training Videos For All Ages and Belt Colors</li>" );
+							$("li.feature1" ).replaceWith( "<li class='inner feature1'> &#8226; Mobile-First Hybrid Web Application</li>" );
+							$("li.feature2" ).replaceWith( "<li class='inner feature2'> &#8226; Intuitive Navigation For 30+ pages</li>" );
+							$("li.feature3" ).replaceWith( "<li class='inner feature3'> &#8226; Training Videos For All Ages and Belt Colors</li>" );
 						});
 					});
 					$(function() {
 						$('#port2').click(function(){
 							$("#mainPort").attr('src',"images/NinjaCampShowcase.png");
 							$("h3.first" ).replaceWith( "<h3 class='inner first'>Ninja Camp</h2>" );
-							$("li.feature1" ).replaceWith( "<li class='inner feature1' type='disc'>Responsive And Elegant Design</li>" );
-							$("li.feature2" ).replaceWith( "<li class='inner feature2' type='disc'>Info, Photo Gallery, and FAQ Pages</li>" );
-							$("li.feature3" ).replaceWith( "<li class='inner feature3' type='disc'>Custom Registration Page With Secure Payment Processing</li>" );
+							$("li.feature1" ).replaceWith( "<li class='inner feature1'> &#8226; Responsive And Elegant Design</li>" );
+							$("li.feature2" ).replaceWith( "<li class='inner feature2'> &#8226; Info, Photo Gallery, and FAQ Pages</li>" );
+							$("li.feature3" ).replaceWith( "<li class='inner feature3'> &#8226; Custom Registration Page With Secure Payment Processing</li>" );
 						});
 					});
 					$(function() {

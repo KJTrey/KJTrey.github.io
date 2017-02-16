@@ -9,6 +9,7 @@
 		font: inherit;
 		vertical-align: baseline;
 		max-width: 100%;
+		overflow-x: hidden;
 		}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -203,7 +204,9 @@ header#workHeader > p {
 	padding-top: 11px;
 }
 #work {
+	position: relative;
 	width: 100%;
+	margin: 0px;
 	padding: 4rem 17%;
 	background-color: white;
 	color: #001834;
@@ -223,7 +226,10 @@ header#workHeader > p {
 		margin:0;
 	}
 	#work {
-	padding: 0 2rem;
+	padding: 3rem 2rem;
+	}
+	.inner {
+		text-align: center;
 	}
 }
 .left-div {
@@ -238,10 +244,10 @@ header#workHeader > p {
 	margin-right: .5rem;
 }
 .beliefs {
-  width: 100%;
+	width: 80%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  position: relative;
   margin-bottom: 2rem;
 }
 .belief {
@@ -249,16 +255,15 @@ header#workHeader > p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  width: 24.5%;
+  margin: .1rem;
   min-width: 150px;
   height: 150px;
-  position:relative;
-  display: inline-flex;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.18);
-  -moz-transition: all 1.2s ease;
-  -o-transition: all 1.2s ease;
-  -webkit-transition: all 1.2s ease;
-  transition: all 1.2s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .belief i {
@@ -327,10 +332,26 @@ span.text-belief {
 	}
 	.second {
 		text-transform: uppercase;
+		font-size: 80%;
 		letter-spacing: .1rem;
 	}
 	.second > span {
 		border-bottom: 1px dashed #001834;
+	}
+	a.third > span {
+		text-transform: uppercase;
+		font-size: 75%;
+		letter-spacing: .1rem;
+		padding: .2rem 1rem;
+		border: 1px solid #001834;
+		border-radius: 5px;
+		z-index: 65352342;
+		transition: all .5 ease;
+	}
+	a.third:hover span{
+		background-color: #001834;
+		color: white;
+		border: 1px solid whitesmoke;
 	}
 	.highlighted {
 		background: -moz-linear-gradient(top, rgba(0,24,52,1) 0%, rgba(255,255,255,0) 100%);
@@ -339,6 +360,11 @@ span.text-belief {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001834', endColorstr='#00ffffff',GradientType=0 );
 	}
 /* Work Display */
+.workContainer {
+	position: relative;
+	width: 100%;
+	overflow-x: visible;
+}
 	#background-work {
 		position: absolute;
 		background-color: white;
@@ -356,12 +382,6 @@ span.text-belief {
 		width: 100%;
 		height: auto;
 	}
-	.workContainer {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		overflow: visible;
-	}
 	ul.work {
 		list-style-type: none;
 		margin: 0;
@@ -376,6 +396,7 @@ span.text-belief {
 	}
 
 	ul.work li {
+		overflow: hidden;
 		display: inline-block;
 		height: 200px;
 		width: 250px;
@@ -549,16 +570,11 @@ span.text-belief {
 	.mainDiv {
 		position: relative;
 		width: 65%;
-		margin: 100px;
-		padding-top: 1rem;
+		padding: 4rem 0;
 	}
 	@media screen and (max-width: 736px) {
 		.mainDiv {
 			width: 90%;
-		}
-		.workContainer {
-			max-width: 90%;
-			margin: 0 auto;
 		}
 	}
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after, body.is-switching *, body.is-switching *:before, body.is-switching *:after {
