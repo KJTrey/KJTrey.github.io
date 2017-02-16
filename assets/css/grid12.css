@@ -911,3 +911,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

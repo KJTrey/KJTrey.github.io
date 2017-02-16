@@ -295,12 +295,12 @@ span.text-belief {
 	}
 	#leftArrow {
 		position: absolute;
-		top: 45%;
+		bottom: 100px;
 		left: -30px;
 	}
 	#rightArrow {
 		position: absolute;
-		top: 45%;
+		bottom: 100px;
 		right: -30px;
 	}
 /* Work Display */
