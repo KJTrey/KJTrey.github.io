@@ -338,7 +338,7 @@ span.text-belief {
 	.second > span {
 		border-bottom: 1px dashed #001834;
 	}
-	a.third > span {
+	.third span {
 		text-transform: uppercase;
 		font-size: 75%;
 		letter-spacing: .1rem;
@@ -346,9 +346,14 @@ span.text-belief {
 		border: 1px solid #001834;
 		border-radius: 5px;
 		z-index: 65352342;
-		transition: all .5 ease;
+		background-color: white;
+		color: #001834;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		-webkit-transition: all .5s ease; 
+		transition: all .5s ease;
 	}
-	a.third:hover span{
+	.third span:hover{
 		background-color: #001834;
 		color: white;
 		border: 1px solid whitesmoke;
@@ -364,6 +369,8 @@ span.text-belief {
 	position: relative;
 	width: 100%;
 	overflow-x: visible;
+	display:block;
+	clear:both;
 }
 	#background-work {
 		position: absolute;

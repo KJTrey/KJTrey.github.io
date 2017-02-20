@@ -105,10 +105,11 @@
 
 					<div id="work" class="mainDiv">
 						<h2 style="color: #001834; z-index: 9000000;position: absolute;top: 1rem;left: 17%;">Work</h2>
-						<div class="col-sm-8 col-xs-12">
-							<img id="mainPort" class="img-fluid" src="images/NinjaCampShowcase.png"/>
-						</div>
-						<div class="col-sm-4 col-xs-12">
+						<div style="position: relative;">
+							<div class="col-sm-8 col-xs-12">
+								<img id="mainPort" class="img-fluid" src="images/NinjaCampShowcase.png"/>
+							</div>
+							<div class="col-sm-4 col-xs-12">
 							<h3 class="inner first">Shaolin Kempo Arts</h3>
 							<p class="inner second"><span>Features</span></p>
 							<ul>
@@ -116,7 +117,8 @@
 								<li class="inner feature2">&#8226; 2nd Feature</li>
 								<li class="inner feature3">&#8226; 3rd Feature</li>
 							</ul>
-							<div class="inner"><a href="projects/shaolin.html" class="third"><span>Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a></div>
+							<div class="inner"><a href="projects/shaolin.html" class="third"><span>Check it out <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a></div>
+							</div>
 						</div>
 						<div class="workContainer">
 							<i id="leftArrow" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
@@ -199,6 +201,7 @@
 							$("li.feature1" ).replaceWith( "<li class='inner feature1'> &#8226; Mobile-First Hybrid Web Application</li>" );
 							$("li.feature2" ).replaceWith( "<li class='inner feature2'> &#8226; Intuitive Navigation For 30+ pages</li>" );
 							$("li.feature3" ).replaceWith( "<li class='inner feature3'> &#8226; Training Videos For All Ages and Belt Colors</li>" );
+							$("a.third" ).replaceWith( "<a href='projects/shaolin.html' class='third'><span>Check it out <i class='fa fa-arrow-right' aria-hidden='true'></i></span></a>" );
 						});
 					});
 					$(function() {
@@ -208,6 +211,7 @@
 							$("li.feature1" ).replaceWith( "<li class='inner feature1'> &#8226; Responsive And Elegant Design</li>" );
 							$("li.feature2" ).replaceWith( "<li class='inner feature2'> &#8226; Info, Photo Gallery, and FAQ Pages</li>" );
 							$("li.feature3" ).replaceWith( "<li class='inner feature3'> &#8226; Custom Registration Page With Secure Payment Processing</li>" );
+							$("a.third" ).replaceWith( "<a href='http://www.carmelvalleyninjacamp.com' class='third'><span>Check it out <i class='fa fa-arrow-right' aria-hidden='true'></i></span></a>" );
 						});
 					});
 					$(function() {
