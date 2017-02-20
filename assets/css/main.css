@@ -270,6 +270,7 @@ header#workHeader > p {
 	color: rgba(255, 255, 255, 0.18);
 	font-size: 150px;
 	position: absolute;
+	overflow: hidden;
 	bottom: -20px;
 	right:0;
 	line-height: 1;
