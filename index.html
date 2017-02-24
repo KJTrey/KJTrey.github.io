@@ -603,12 +603,7 @@
 					<p>Looking to revamp your website or create the next big thing?<br/> I am your guy, no project too big or too small. Get in touch with me by filling out the form below.</p>
 				
 				</header>
-				<form id="contactform" class="bl_form text-center" action="//formspree.io/johnsonkyle03@gmail.com" method="POST">
-					<input type="text" name="name" placeholder="Your name">
-					<input type="email" name="_replyto" placeholder="Your email">
-					<textarea name="message" placeholder="Your message"></textarea>
-					<input type="submit" value="Send">
-				</form>
+
 				<form id="contactform" class="bl_form text-center" action="//formspree.io/johnsonkyle03@gmail.com" method="POST">
 					<span class="field-wrap scrollimation fade-right">
 						<label class="control-label" for="contact-name">Name</label>
@@ -622,10 +617,11 @@
 						<label class="control-label" for="contact-message">Message</label>
 						<textarea id="contact-message" name="message" type="textarea" rows="1" class="label_better requiredField" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
 					</span>
-					<input type="submit" name="submit" value="Send" class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent">>
-					<p class="text-center"><button name="submit" type="submit" class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane" value="Send"></i>Send Message</button></p>
-					<input type="hidden" name="submit" id="submitted" value="Send" />
-					
+					<p class="text-center">
+						<button class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message
+							<input type="submit" name="submit" value="Send">
+						</button>
+					</p>
 				</form>
 				
 			</div>
