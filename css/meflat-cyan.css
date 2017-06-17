@@ -89,6 +89,9 @@ a:focus,
 .padding-top {
     padding:100px 0 0;
 }
+.padding-bottom {
+    padding-bottom:75px;
+}
 
 .navbar {
     margin:0;
