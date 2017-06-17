@@ -173,6 +173,9 @@ a:focus,
 .white-bg{
     background:#fff;
 }
+.ocean-bg{
+    background:#00496c;
+}
 
 .gray-bg{
     background:#f2f2f2;
@@ -378,7 +381,37 @@ a:focus,
 }
 
 #home{
-    background-color:#74C7D5;
+    background: #71b5da;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71b5da, #a6def3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71b5da, #a6def3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes clouds1 {
+    0%   {left:0%; top:60px;}
+    25%  {left:20%; top:60px;}
+    50%  {left:47%; top:60px;}
+    100% {left:100%; top:60px;}
+}
+@keyframes clouds2 {
+    0%   {right:0%; top:40px;}
+    25%  {right:30%; top:40px;}
+    50%  {right:55%; top:40px;}
+    100%  {right:100%; top:40px;}
+}
+
+.cloud1 {
+    position: absolute;
+    z-index: 1000;
+    animation-name: clouds1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.cloud2 {
+    position: absolute;
+    z-index: 999;
+    animation: clouds2 89s linear infinite alternate;
 }
 
 .jumbotron.bg-image {
@@ -533,7 +566,11 @@ a:focus,
 
 /*----------------------
 -----Services Styles----
-------------------------*/  
+------------------------*/ 
+
+#services {
+    color: #f2f2f2;
+} 
 .services .item {
     text-align:center;
     margin-bottom:30px;
