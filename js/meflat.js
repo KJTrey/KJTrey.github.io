@@ -91,6 +91,21 @@ $(document).ready(function() {
 	
 	var PI = Math.PI;
 	var TAU = PI * 2;
+	var c;
+	var ctx;
+	var simplex;
+	var cx;
+	var cy;
+	var count;
+	var xoff;
+	var xinc;
+	var yoff;
+	var yinc;
+	var goff;
+	var ginc;
+	var y;
+	var length;
+	var amp;
 	
 	var rand = function( min, max ) {
 		if ( !max ) {
@@ -100,68 +115,68 @@ $(document).ready(function() {
 		return Math.random() * ( max - min ) + min;
 	};
 	
-	$.init = () => {
-		$.c = document.getElementById("ocean-waves");
-		$.ctx = $.c.getContext( '2d' );
-		$.simplex = new SimplexNoise();
-		$.events();
-		$.reset();
-		$.loop();
+	function init() {
+		c = document.getElementById("ocean-waves");
+		ctx = w.getContext( '2d' );
+		simplex = new SimplexNoise();
+		events();
+		reset();
+		loop();
 	};
 	
-	$.reset = () => {
-		$.w = window.innerWidth;
-		$.h = window.innerHeight;
-		$.cx = $.w / 2;
-		$.cy = $.h / 2;
-		$.c.width = $.w;
-		$.c.height = $.h;
+	function reset() {
+		w = window.innerWidth;
+		h = window.innerHeight;
+		cx = w / 2;
+		cy = h / 2;
+		c.width = w;
+		c.height = h;
 		
-		$.count = Math.floor( $.w / 50 );
-		$.xoff = 0;
-		$.xinc = 0.05;	
-		$.yoff = 0;
-		$.yinc = 0.003;
-		$.goff = 0;
-		$.ginc = 0.003;
-		$.y = $.h * 0.66;
-		$.length = $.w + 10;
-		$.amp = 40;
+		count = Math.floor( w / 50 );
+		xoff = 0;
+		xinc = 0.05;	
+		yoff = 0;
+		yinc = 0.003;
+		goff = 0;
+		ginc = 0.003;
+		y = h * 0.66;
+		length = w + 10;
+		amp = 40;
 	};
 	
-	$.events = () => {
+	function events() {
 		window.addEventListener( 'resize', $.reset.bind( this ) );	
 	};
 	
-	$.wave = () => {
-		$.ctx.beginPath();
-		let sway = $.simplex.noise2D( $.goff, 0 ) * $.amp;
-		for( let i = 0; i <= $.count; i++ ) {
-			$.xoff += $.xinc;
-			let x = $.cx - $.length / 2 + ( $.length / $.count ) * i;
-			let y = $.y + $.simplex.noise2D( $.xoff, $.yoff ) * $.amp + sway;
-			$.ctx[ i === 0 ? 'moveTo' : 'lineTo' ]( x, y );
+	function wave() {
+		ctx.beginPath();
+		let sway = simplex.noise2D( goff, 0 ) * amp;
+		for( let i = 0; i <= count; i++ ) {
+			xoff += xinc;
+			let x = cx - length / 2 + ( length / count ) * i;
+			let y = y + simplex.noise2D( xoff, yoff ) * amp + sway;
+			ctx[ i === 0 ? 'moveTo' : 'lineTo' ]( x, y );
 		}
-		$.ctx.lineTo( $.w, $.h );
-		$.ctx.lineTo( 0, $.h );
-		$.ctx.closePath();
-		$.ctx.fillStyle = 'hsla(210, 90%, 50%, 0.2)';
-		$.ctx.fill();
+		ctx.lineTo( w, h );
+		ctx.lineTo( 0, h );
+		ctx.closePath();
+		ctx.fillStyle = 'hsla(210, 90%, 50%, 0.2)';
+		ctx.fill();
 	};
 	
-	$.loop = () => {
-		requestAnimationFrame( $.loop );
-		$.ctx.clearRect( 0, 0, $.w, $.h );
-		$.xoff = 0;
-		$.wave();
-		$.wave();
-		$.wave();
-		$.wave();
-		$.yoff += $.yinc;
-		$.goff += $.ginc;
+	function loop() {
+		requestAnimationFrame( loop );
+		ctx.clearRect( 0, 0, w, h );
+		xoff = 0;
+		wave();
+		wave();
+		wave();
+		wave();
+		yoff += yinc;
+		goff += ginc;
 	};
 	
-	$.init();
+	init();
 
 	/*============================================
 	Stars Functions
