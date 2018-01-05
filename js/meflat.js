@@ -119,7 +119,7 @@ $(document).ready(function() {
 
 	/*============================================
 	Wave Functions
-	==============================================*/
+	==============================================
 	var ocean = document.getElementById("ocean"),
 	waveWidth = 10,
 	waveCount = Math.floor(window.innerWidth/waveWidth),
@@ -133,7 +133,7 @@ $(document).ready(function() {
 	wave.style.webkitAnimationDelay = (i/100) + "s";
 	}
 
-	ocean.appendChild(docFrag);
+	ocean.appendChild(docFrag);*/
 
 	/*============================================
 	Parralax Functions
