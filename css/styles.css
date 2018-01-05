@@ -286,6 +286,7 @@ body{
     background:#00496c;
 }
 .who-bg{
+    margin-top: -10px;
     background: #1380b2;
     background: -moz-linear-gradient(top, #1380b2 35%, #0069aa 100%);
     background: -webkit-linear-gradient(top, #1380b2 35%,#0069aa 100%);
