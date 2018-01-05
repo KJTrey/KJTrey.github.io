@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 	/*============================================
 	Parralax Functions
 	==============================================*/
@@ -294,5 +295,15 @@ $(document).ready(function() {
 			$.waypoints('refresh');
 		},1000);
 	}
+
+
+	/*============================================
+	Fluid tooltip hover
+	==============================================*/
+	$(function() {
+		$("#canvas").hover(function(){
+			$("#fluid-tooltip").show().delay( 5000 ).hide();
+		});
+	});
 
 });	

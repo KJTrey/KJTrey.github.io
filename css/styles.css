@@ -121,6 +121,22 @@ a:focus,
     font-weight:600;
     letter-spacing:0.05em;
 }
+
+/*------------------
+-- Fluid tooltips --
+--------------------*/
+#fluid-tooltip {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    display: hidden;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Futura', sans-serif;
+    color: #d7e6f9;
+    text-align: center;
+}
+
 /*------------------
 ----- tooltips ------
 --------------------*/
