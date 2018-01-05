@@ -12,6 +12,7 @@ body{
 	overflow-x:hidden;
 }
 
+
 h1,
 h2,
 h3,
@@ -120,6 +121,50 @@ a:focus,
     font-weight:600;
     letter-spacing:0.05em;
 }
+/*------------------
+----- tooltips ------
+--------------------*/
+.tooltip {
+    position: relative;
+  }
+  .tooltip:before,
+  .tooltip:after {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+  .tooltip:after {
+      border: none;
+    content: '';
+    height: 0;
+      top: 20px;
+      left: 20px;
+    width: 0;
+  }
+  .tooltip:before {
+    background: rgba(0,0,0,0);
+    border-radius: 2px;
+    color: #777;
+    content: ''attr(data-title)'';
+    font-size: 14px;
+    padding: 6px 10px;
+      bottom: 26px;
+    white-space: nowrap;
+  }
+  
+  /* the animations */
+  /* fade */
+  .tooltip.fade:after,
+  .tooltip.fade:before {
+    transform: translate3d(0,10px,0);
+    transition: all 1s ease-in-out;
+  }
+  .tooltip.fade:hover:after,
+  .tooltip.fade:hover:before {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
 
 /*------------------
 ----- fluid stuff ------

@@ -220,6 +220,9 @@ var Canvas = function () {
             this.ctx.textAlign = 'center';
             this.ctx.fillStyle = '#09203f';
             this.ctx.fillText('Lets make waves.', this.canvas.width / 2, this.canvas.height / 3.5 + size2 / 3);
+            this.ctx.setAttribute('data', "title: 'Click and hold anywhere'");
+            this.ctx.classList.add("tooltip");
+            this.ctx.classList.add("fade");
         }
     }, {
         key: 'drawCurve',
