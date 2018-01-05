@@ -148,6 +148,7 @@ a:focus,
   }
 
 #ocean-waves {
+    z-index: 1005;
     height:100%;
     display:block;
     background: radial-gradient( circle cover, hsl( 210, 90%, 90% ), hsl( 210, 90%, 70% ) );
