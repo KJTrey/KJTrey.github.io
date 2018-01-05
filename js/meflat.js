@@ -122,7 +122,7 @@ $(document).ready(function() {
 	Wave Functions
 	==============================================*/
 	var ocean = document.getElementById("ocean"),
-	waveWidth = 5,
+	waveWidth = 10,
 	waveCount = Math.floor(window.innerWidth/waveWidth),
 	docFrag = document.createDocumentFragment();
 
