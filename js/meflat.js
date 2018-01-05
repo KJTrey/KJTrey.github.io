@@ -118,7 +118,7 @@ $(document).ready(function() {
 	
 	function init() {
 		c = document.getElementById("ocean-waves");
-		ctx = w.getContext( '2d' );
+		ctx = c.getContext( '2d' );
 		simplex = new SimplexNoise();
 		events();
 		reset();
