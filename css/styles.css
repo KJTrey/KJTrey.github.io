@@ -130,13 +130,15 @@ body{
 
 #ocean{
   position:absolute;
+  z-index: 1002;
   width:100%;
   min-height:100%;
-  background: #34739e;
-  background: -moz-linear-gradient(bottom, #34739e 0%,#3787bf 100%);
-  background: -webkit-linear-gradient(bottom, #3787bf 100%);
-  background: linear-gradient(to top, #3787bf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34739e', endColorstr='#3787bf',GradientType=0 );
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(0,50,150)),
+  color-stop(0.50, rgb(0,150,255))
   );
 }
 
@@ -146,14 +148,14 @@ body{
   height:60%;
   width:10px;
   position:absolute;
-  -webkit-animation-name:             dostuff; 
+  -webkit-animation-name:             waveAnim; 
   -webkit-animation-duration:         3s; 
   -webkit-animation-iteration-count:  infinite;
   -webkit-transition-timing-function: ease-in-out;
 }
 
 
-@-webkit-keyframes dostuff{
+@-webkit-keyframes waveAnim{
   0%{
     height:60%;
   }
