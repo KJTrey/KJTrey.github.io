@@ -106,6 +106,7 @@ $(document).ready(function() {
 	var y;
 	var length;
 	var amp;
+	var w;
 	
 	var rand = function( min, max ) {
 		if ( !max ) {
