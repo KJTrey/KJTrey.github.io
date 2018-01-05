@@ -91,7 +91,7 @@ $(document).ready(function() {
 	==============================================*/
 
 	// Calculate the screen size
-	screenH = $(window).height();
+	screenH = $(window).height()/1.5;
 	screenW = $(window).width();
 	
 	// Get the canvas
