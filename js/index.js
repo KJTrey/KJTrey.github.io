@@ -213,13 +213,13 @@ var Canvas = function () {
             this.ctx.font = 'bold ' + size1 + 'px Futura';
             this.ctx.textAlign = 'center';
             this.ctx.fillStyle = '#ffffff';
-            this.ctx.fillText('Fluid', this.canvas.width / 2, this.canvas.height / 2 + size1 / 3);
+            this.ctx.fillText('Kyle', this.canvas.width / 2, this.canvas.height / 2 + size1 / 3);
 
             var size2 = 24 * this.dpr;
             this.ctx.font = 'bold ' + size2 + 'px Futura';
             this.ctx.textAlign = 'center';
             this.ctx.fillStyle = '#09203f';
-            this.ctx.fillText('Click and hold to interact.', this.canvas.width / 2, this.canvas.height / 3.5 + size2 / 3);
+            this.ctx.fillText('Lets make waves.', this.canvas.width / 2, this.canvas.height / 3.5 + size2 / 3);
         }
     }, {
         key: 'drawCurve',
