@@ -287,11 +287,11 @@ body{
 }
 .who-bg{
     margin-top: -10px;
-    background: #2a8dbb;
-    background: -moz-linear-gradient(-45deg, #2a8dbb 0%, #00548c 100%);
-    background: -webkit-linear-gradient(-45deg, #2a8dbb 0%,#00548c 100%);
-    background: linear-gradient(135deg, #2a8dbb 0%,#00548c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a8dbb', endColorstr='#00548c',GradientType=1 );
+    background: #2c93c3;
+    background: -moz-linear-gradient(top, #2c93c3 0%, #00548c 100%);
+    background: -webkit-linear-gradient(top, #2c93c3 0%,#00548c 100%);
+    background: linear-gradient(to bottom, #2c93c3 0%,#00548c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c93c3', endColorstr='#00548c',GradientType=0 );
 }
 
 .gray-bg{
