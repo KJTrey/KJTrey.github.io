@@ -88,12 +88,11 @@ $(document).ready(function() {
 	/*========================================
 	Ocean waves
 	========================================*/
-	const $ = {};
 	
-	$.PI = Math.PI;
-	$.TAU = $.PI * 2;
+	var PI = Math.PI;
+	var TAU = PI * 2;
 	
-	$.rand = function( min, max ) {
+	var rand = function( min, max ) {
 		if ( !max ) {
 			var max = min;
 			min = 0;
