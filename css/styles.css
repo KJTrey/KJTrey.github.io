@@ -132,12 +132,11 @@ body{
   position:absolute;
   width:100%;
   min-height:100%;
-  background-image: -webkit-gradient(
-  linear,
-  left bottom,
-  left top,
-  color-stop(0, rgb(0,50,150)),
-  color-stop(0.50, rgb(0,150,255))
+  background: #34739e;
+  background: -moz-linear-gradient(bottom, #34739e 0%,#3787bf 100%);
+  background: -webkit-linear-gradient(bottom, #3787bf 100%);
+  background: linear-gradient(to top, #3787bf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34739e', endColorstr='#3787bf',GradientType=0 );
   );
 }
 
