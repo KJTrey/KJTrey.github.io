@@ -138,8 +138,8 @@ a:focus,
 --------------------*/
 #moon {
     position: absolute;
-    top: 375px;
-    right: 200px;
+    top: 50%;
+    right: 10%;
     box-shadow: inset 0px 0px 50px 1px #6D8F94, 0px 0px 80px 30px rgba(143, 189, 255, .7);
     width: 150px;
     height: 150px; 
