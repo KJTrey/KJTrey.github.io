@@ -8,7 +8,7 @@ $(document).ready(function() {
 	waveCount = Math.floor(window.innerWidth/waveWidth),
 	docFrag = document.createDocumentFragment();
 
-	for(var i = 0; i < waveCount; i++){
+	for(var i = 0; i <= waveCount; i++){
 	var wave = document.createElement("div");
 	wave.className += " wave";
 	docFrag.appendChild(wave);
