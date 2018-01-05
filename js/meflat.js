@@ -4,7 +4,7 @@ $(document).ready(function() {
 	Wave Functions
 	==============================================*/
 	var ocean = document.getElementById("ocean"),
-	waveWidth = 10,
+	waveWidth = 5,
 	waveCount = Math.floor(window.innerWidth/waveWidth),
 	docFrag = document.createDocumentFragment();
 
