@@ -106,7 +106,7 @@ $(document).ready(function() {
 	var y;
 	var length;
 	var amp;
-	var w;
+	var reset;
 	
 	var rand = function( min, max ) {
 		if ( !max ) {
@@ -146,7 +146,7 @@ $(document).ready(function() {
 	};
 	
 	function events() {
-		window.addEventListener( 'resize', $.reset.bind( this ) );	
+		window.addEventListener( 'resize', reset.bind( this ) );	
 	};
 	
 	function wave() {
