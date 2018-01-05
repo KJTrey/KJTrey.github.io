@@ -1,6 +1,24 @@
 $(document).ready(function() {
 	
 	/*============================================
+	Wave Functions
+	==============================================*/
+	var ocean = document.getElementById("ocean"),
+	waveWidth = 10,
+	waveCount = Math.floor(window.innerWidth/waveWidth),
+	docFrag = document.createDocumentFragment();
+
+	for(var i = 0; i < waveCount; i++){
+	var wave = document.createElement("div");
+	wave.className += " wave";
+	docFrag.appendChild(wave);
+	wave.style.left = i * waveWidth + "px";
+	wave.style.webkitAnimationDelay = (i/100) + "s";
+	}
+
+	ocean.appendChild(docFrag);
+
+	/*============================================
 	Navigation Functions
 	==============================================*/
 	if ($(window).scrollTop()===0){
