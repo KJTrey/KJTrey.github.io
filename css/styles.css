@@ -134,18 +134,18 @@ a:focus,
 
   
 /*------------------
------ Sun stuff ------
+----- Moon stuff ------
 --------------------*/
-#sun {
-    z-index: 1003;
-    background: yellow;
-    border-radius: 100%;
-    height: 200px;
-    width: 200px;
+#moon {
     position: absolute;
-    left: 40%;
-    top: 100%;
-}
+    top: 100px;
+    right: 150px;
+    box-shadow: inset 0px 0px 50px 1px #6D8F94, 0px 0px 80px 30px rgba(143, 189, 255, .7);
+    width: 100px;
+    height: 100px; 
+    background: #ffffff;
+    border-radius: 100%;
+  }
 /*------------------
 ----- Wave stuff ------
 --------------------*/
