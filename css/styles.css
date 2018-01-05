@@ -146,6 +146,13 @@ a:focus,
     background: #f9f9f9;
     border-radius: 100%;
   }
+
+#ocean-waves {
+    height:100%;
+    display:block;
+    background: radial-gradient( circle cover, hsl( 210, 90%, 90% ), hsl( 210, 90%, 70% ) );
+	overflow: hidden;
+}
 /*------------------
 ----- Wave stuff ------
 --------------------*/
