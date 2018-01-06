@@ -132,6 +132,9 @@ a:focus,
 }
 .about-photo {
     z-index: 1019 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .below-photo {
     z-index: 1018 !important;
