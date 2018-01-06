@@ -134,6 +134,7 @@ a:focus,
     font-family: 'Futura', sans-serif;
     color: #d7e6f9;
     text-align: center;
+    z-index: 1011;
 }
 
 /*------------------

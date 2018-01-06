@@ -301,9 +301,7 @@ $(document).ready(function() {
 	Fluid tooltip hover
 	==============================================*/
 	$(function() {
-		$("#canvas").hover(function(){
-			$("#fluid-tooltip").show().delay( 5000 ).hide();
-		});
+		$("#fluid-tooltip").delay(3000).fadeIn(3000).delay(10000).fadeOut(3000);
 	});
 
 });	
