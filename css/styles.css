@@ -1572,12 +1572,12 @@ body{
 ------------------------*/ 
 @media (max-width: 640px){
 	body {
-        font-size: 10px;
+        font-size: 14px;
 	}
 }
 @media (min-width: 641px) and (max-width: 800px){
 	body {
-        font-size: 14px;
+        font-size: 15px;
 	}
 }
 @media (min-width: 801px) and (max-width: 1024px){
