@@ -1577,14 +1577,18 @@ body{
 -----Bio about who------
 ------------------------*/ 
 .bio {
-    font-family: Futura, 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 20px;
 }
 .bio-title {
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1em;
 }
 .bio-text {
     font-weight: 300;
+    font-size: 1.1em;
 }
 /*----------------------
 -----Media Queries------
