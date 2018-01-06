@@ -122,6 +122,10 @@ a:focus,
     letter-spacing:0.05em;
 }
 
+.section-photo-div {
+    position: relative;
+    display: block;
+}
 .fishies {
     position: absolute;
     top: 0px;
