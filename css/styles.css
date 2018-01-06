@@ -122,6 +122,20 @@ a:focus,
     letter-spacing:0.05em;
 }
 
+.fishies {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.above-photo {
+    z-index: 1020;
+}
+.about-photo {
+    z-index: 1019;
+}
+.below-photo {
+    z-index: 1018;
+}
 /*------------------
 -- Fluid tooltips --
 --------------------*/
