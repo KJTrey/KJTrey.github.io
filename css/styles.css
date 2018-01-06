@@ -1578,7 +1578,7 @@ body{
 ------------------------*/ 
 .bio {
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 20px;
+    padding: 0px 5%;
 }
 .bio-title {
     text-transform: uppercase;
@@ -1588,7 +1588,7 @@ body{
 }
 .bio-text {
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 /*----------------------
 -----Media Queries------
