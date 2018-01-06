@@ -1608,12 +1608,12 @@ body{
         font-size: 20px;
 	}
 }
-@media (min-width: 801px) and (max-width: 1024px){
+@media (min-width: 801px) and (max-width: 900px){
 	body {
         font-size: 22px;
 	}
 }
-@media (min-width: 1025px){
+@media (min-width: 901px){
 	body {
         font-size: 16px;
 	}
