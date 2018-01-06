@@ -1589,7 +1589,7 @@ body{
 }
 @media (min-width: 1025px){
 	body {
-        font-size: 20px;
+        font-size: 16px;
 	}
 }
 @media (max-width: 767px) {
