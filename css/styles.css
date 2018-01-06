@@ -1598,7 +1598,7 @@ body{
     font-family: 'Cardo', serif;
     font-weight: 400;
     font-size: 2em;
-    line-height: 1em;
+    line-height: 1.3em;
 }
 /*----------------------
 -----Media Queries------
@@ -1614,7 +1614,10 @@ body{
 @media (min-width: 641px) and (max-width: 900px){
 	body {
         font-size: 20px;
-	}
+    }
+    .bio {
+        text-align: center !important;
+    }
 }
 @media (min-width: 901px){
 	body {
