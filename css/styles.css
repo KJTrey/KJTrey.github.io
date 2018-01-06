@@ -144,6 +144,7 @@ a:focus,
     width: 100%;
     text-align: center;
     margin-top: -500px;
+    margin-bottom: 500px;
 }
 /*------------------
 -- Fluid tooltips --
