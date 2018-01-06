@@ -143,8 +143,6 @@ a:focus,
     color: #d7e6f9;
     width: 100%;
     text-align: center;
-    z-index: 1011;
-    opacity: 0;
 }
 /*------------------
 -- Fluid tooltips --
