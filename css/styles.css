@@ -1573,7 +1573,19 @@ body{
 	-ms-transform: translateY(0px);
 	transform:translateY(0px);
 }
-
+/*----------------------
+-----Bio about who------
+------------------------*/ 
+.bio {
+    font-family: Futura, 'Montserrat', sans-serif;
+}
+.bio-title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.bio-text {
+    font-weight: 300;
+}
 /*----------------------
 -----Media Queries------
 ------------------------*/ 
