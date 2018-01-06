@@ -1578,7 +1578,7 @@ body{
 ------------------------*/ 
 .bio {
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 5%;
+    padding: 0px 10%;
 }
 .bio-title {
     text-transform: uppercase;
@@ -1596,7 +1596,10 @@ body{
 @media (max-width: 640px){
 	body {
         font-size: 16px;
-	}
+    }
+    .bio {
+        text-align: center;
+    }
 }
 @media (min-width: 641px) and (max-width: 800px){
 	body {
