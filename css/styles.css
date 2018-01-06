@@ -1603,14 +1603,9 @@ body{
         text-align: center !important;
     }
 }
-@media (min-width: 641px) and (max-width: 800px){
+@media (min-width: 641px) and (max-width: 900px){
 	body {
         font-size: 20px;
-	}
-}
-@media (min-width: 801px) and (max-width: 900px){
-	body {
-        font-size: 22px;
 	}
 }
 @media (min-width: 901px){
