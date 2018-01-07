@@ -1619,6 +1619,12 @@ body{
     padding: 0px;
     margin: 5px;
 }
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /*----------------------
 -----Media Queries------
 ------------------------*/ 
