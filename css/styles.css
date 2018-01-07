@@ -1620,6 +1620,9 @@ body{
     margin: 5px;
 }
 
+#particles-container {
+    position: relative;
+}
 #particles-js {
     position: absolute;
     top: 0;
