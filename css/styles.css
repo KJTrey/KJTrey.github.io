@@ -1612,6 +1612,7 @@ body{
 }
 .no-padding {
     padding: 0px;
+    margin: 0px;
 }
 /*----------------------
 -----Media Queries------
