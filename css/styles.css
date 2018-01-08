@@ -115,6 +115,9 @@ a:focus,
     border-radius:0;
 }
 
+section {
+    min-height: 100vh;
+}
 .section-header {
     margin-bottom:80px;
 }
