@@ -11,17 +11,19 @@ $(document).ready(function() {
 	/*============================================
 	Scroll magic
 	==============================================*/
-	$( "#test-me" ).hide();
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
 	var scene1TL = new TimelineMax();
 	
 	scene1TL
-	   .to($('#who #about-me'), 1, {opacity: 0, bottom: 100}, 1.5)
-	   .call($( "#about-me" ).hide())
-	   .call($( "#test-me" ).show())
-	   .to($('#who #test-me'), 1, {opacity: 1, top: 100}, 1.5);
+		.to($('#who .bio-title'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+		.to($('#who .bio-title'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+		.set($('#who .bio-title'), {text: "test"})
+		.set($('#who .bio-text'), {text: "Remember that time spent on a rock climb isnt subtracted from your life span."})
+		.fromTo($('#who .bio-title'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+		.fromTo($('#who .bio-text'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+		.set($('#who .bio-title'), {autoAlpha: 1}, '+=2');
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
