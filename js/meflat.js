@@ -18,6 +18,7 @@ $(document).ready(function() {
 	var scene1 = new ScrollMagic.Scene({
 		triggerElement: '#who',
 		duration: 100,	// the scene should last for a scroll distance of 100px
+		triggerHook: 0,
 		//offset: 50		// start this scene after scrolling for 50px
 	})
 	scene1.setPin("#who") // pins the element for the the scene's duration
