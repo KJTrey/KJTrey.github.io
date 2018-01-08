@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	/*============================================
 	Scroll magic
-	==============================================*/
+	==============================================
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
    })
    scene1.setPin("#what")
    scene1.setTween(scene1TL)
-   scene1.addTo(controller);
+   scene1.addTo(controller);*/
 	
 
 	/*============================================
