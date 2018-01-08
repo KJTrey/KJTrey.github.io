@@ -224,7 +224,7 @@ var Canvas = function () {
             var size3 = 14 * this.dpr;
             this.ctx.font = 'bold ' + size2 + 'px Futura';
             this.ctx.textAlign = 'center';
-            this.ctx.fillStyle = '#aea8ac';
+            this.ctx.fillStyle = '#f2e6ef';
             this.ctx.fillText('(Click and hold to interact)', this.canvas.width / 2, this.canvas.height / 3 + size3 / 3);
         }
     }, {
