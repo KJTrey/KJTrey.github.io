@@ -24,10 +24,26 @@ $(document).ready(function() {
 	scene1.setPin("#who") // pins the element for the the scene's duration
 	scene1.addTo(controller); // assign the scene to the controller
 	scene1.on("leave", function (event) {
-		$( "#about-me" ).slideUp( "slow", function() {
-			// Animation complete.
+		$( "#about-me" ).slideToggle( "slow", function() {
+			$( "#test-me" ).slideToggle( "slow", function() {
+				// Animation complete.
+			});
+			var scene2 = new ScrollMagic.Scene({
+				triggerElement: '#who',
+				duration: 1000,	// the scene should last for a scroll distance of 100px
+				triggerHook: 0,
+				//offset: 50		// start this scene after scrolling for 50px
+			})
+			scene2.setPin("#who") // pins the element for the the scene's duration
+			scene2.addTo(controller); // assign the scene to the controller
+			scene2.on("leave", function (event) {
+				$( "#test-me" ).slideToggle( "slow", function() {
+					// Animation complete.
+				});
+			});
 		});
 	});
+	
 
 
 
