@@ -135,12 +135,15 @@ a:focus,
     left: 0px;
 }
 .above-photo {
+    position: relative;
     z-index: 1020;
 }
 .about-photo {
+    position: relative;
     z-index: 1019 !important;
 }
 .below-photo {
+    position: relative;
     z-index: 1018 !important;
 }
 .section-title {
