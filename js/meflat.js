@@ -10,28 +10,24 @@ $(document).ready(function() {
 
 	/*============================================
 	Scroll magic
-	==============================================
-	$('#who #test-wrapper').hide();
-	$('#who #test-wrapper').fadeOut();
+	==============================================*/
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
 	var scene1TL = new TimelineMax();
-	
 	scene1TL
-		.to($('#who #about-me-wrapper'), 1, {autoAlpha: 0, ease:Power1.easeNone, bottom: 100}, 1.5)
-		.to($('#who #about-me-wrapper'), 1, {display: 'none'}, 1.5)
-		.to($('#who #test-wrapper'), 1, {autoAlpha: 0, display: 'block'}, 1.5)
-		.to($('#who #test-wrapper'), 1, {autoAlpha: 1, ease:Power1.easeNone, bottom: 100}, 1.5);
+		.call(function() {
+			$('#what .about-photo').addClass("animated slideInRight");
+		}, null, null, 2);
 	
    var scene1 = new ScrollMagic.Scene({
-	   triggerElement: '#who',
+	   triggerElement: '#what',
 	   triggerHook: 0,
 	   duration: "100%"
    })
-   scene1.setPin("#who")
+   scene1.setPin("#what")
    scene1.setTween(scene1TL)
-   scene1.addTo(controller);*/
+   scene1.addTo(controller);
 	
 
 	/*============================================
