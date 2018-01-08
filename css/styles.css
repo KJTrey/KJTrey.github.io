@@ -1595,16 +1595,19 @@ body{
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 1em;
+    color:#fff;
 }
 .bio-text {
     font-weight: 300;
     font-size: 1em;
+    color: #fff
 }
 .bio-teaser {
     font-family: 'Cardo', serif;
     font-weight: 400;
     font-size: 2em;
     line-height: 1.3em;
+    color: #fff;
 }
 .text-center {
     text-align: center;
