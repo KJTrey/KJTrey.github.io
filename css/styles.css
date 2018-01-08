@@ -135,12 +135,21 @@ a:focus,
     left: 0px;
 }
 .above-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1020;
 }
 .about-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1019 !important;
 }
 .below-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1018 !important;
 }
 .section-title {
