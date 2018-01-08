@@ -161,6 +161,10 @@ section {
     left: 0;
     margin: 0px!important;
 }
+.icon-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
 /*------------------
 -- Fluid tooltips --
 --------------------*/
