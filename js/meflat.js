@@ -12,6 +12,7 @@ $(document).ready(function() {
 	Scroll magic
 	==============================================*/
 	$('#who #test-wrapper').hide();
+	$('#who #test-wrapper').fadeOut();
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
