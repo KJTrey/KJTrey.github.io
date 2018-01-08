@@ -19,6 +19,8 @@ $(document).ready(function() {
 	
 	scene1TL
 	   .to($('#who #about-me'), 1, {opacity: 0, bottom: 100})
+	   .call($( "#about-me" ).hide())
+	   .call($( "#test-me" ).show())
 	   .set($('#who #test-me'), 1, {opacity: 1, top: 100});
 	
    var scene1 = new ScrollMagic.Scene({
