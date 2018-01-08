@@ -11,7 +11,7 @@ $(document).ready(function() {
 	/*============================================
 	Scroll magic
 	==============================================*/
-	$('#who .bio-2').hide();
+	$('#who #test-wrapper').hide();
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
