@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	/*============================================
 	Scroll magic
-	==============================================*/
+	==============================================
 	$('#who #test-wrapper').hide();
 	$('#who #test-wrapper').fadeOut();
 	// init controller
@@ -31,7 +31,7 @@ $(document).ready(function() {
    })
    scene1.setPin("#who")
    scene1.setTween(scene1TL)
-   scene1.addTo(controller);
+   scene1.addTo(controller);*/
 	
 
 	/*============================================
