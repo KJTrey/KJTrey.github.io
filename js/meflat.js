@@ -17,8 +17,7 @@ $(document).ready(function() {
 	var scene1TL = new TimelineMax();
 	
 	scene1TL
-		.to($('#who .bio-title'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-		.to($('#who .bio-title'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+		.to($('#who .bio'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 		.set($('#who .bio-title'), {text: "test"})
 		.set($('#who .bio-text'), {text: "Remember that time spent on a rock climb isnt subtracted from your life span."})
 		.fromTo($('#who .bio-title'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
