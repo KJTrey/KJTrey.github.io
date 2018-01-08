@@ -11,6 +11,7 @@ $(document).ready(function() {
 	/*============================================
 	Scroll magic
 	==============================================*/
+	$( "#test-me" ).hide();
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
