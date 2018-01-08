@@ -162,7 +162,7 @@ section {
     margin: 0px!important;
 }
 .icon-title {
-    font-size: .5rem;
+    font-size: 1rem!important;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
