@@ -21,7 +21,7 @@ $(document).ready(function() {
 	   .to($('#who #about-me'), 1, {opacity: 0, bottom: 100}, 1.5)
 	   .call($( "#about-me" ).hide())
 	   .call($( "#test-me" ).show())
-	   .set($('#who #test-me'), 1, {opacity: 1, top: 100});
+	   .to($('#who #test-me'), 1, {opacity: 1, top: 100}, 1.5);
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
