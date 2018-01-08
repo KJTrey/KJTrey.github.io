@@ -19,7 +19,7 @@ $(document).ready(function() {
 	
 	scene1TL
 		.to($('#who .bio'), 1, {autoAlpha: 0, ease:Power1.easeNone, bottom: 100}, 1.5)
-		.to($('#who .bio-2'), 1, {autoAlpha: 1, ease:Power1.easeNone, top: 100}, 1.5);
+		.to($('#who .bio-2'), 1, {autoAlpha: 1, ease:Power1.easeNone, display: 'block', top: 100}, 1.5);
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
