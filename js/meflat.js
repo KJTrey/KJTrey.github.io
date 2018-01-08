@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	/*MODIFICATION START*/
 	jQuery(document).on('scroll', function(){
-		if(jQuery('html,body').scrollTop() > jQuery('#skills').height()){
+		if(jQuery('html,body').scrollTop() > jQuery('#my-skills').height()){
 	/*MODIFICATION END*/
 		jQuery(".progress-bar").each(function() {
 			jQuery(this).find(".progress-content").animate({

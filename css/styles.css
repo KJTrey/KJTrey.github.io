@@ -192,21 +192,21 @@ section {
 }
 /*====Skill Bar=====*/
 
-.skills {
+#my-skills {
     height: 300px;
     max-width: 100%;
   width:70%;
   margin: 10% auto;
 }
 
-.progress-bar {
+#my-skills .progress-bar {
     margin: 20px 0 10px;
     overflow: hidden;
     /*padding-left:20px;
   padding-right: 25px; /* Separate bars from container */
 }
 
-.progress-title-holder {
+#my-skills .progress-title-holder {
     padding-bottom: 7px;
     position: relative;
     margin: 5px 0;
@@ -217,17 +217,17 @@ section {
     color: #2e2e2e;
 }
 
-.progress-title {
+#my-skills .progress-title {
     z-index: 100;
     font-weight: bold;
 }
 
-.progress-number-wrapper {
+#my-skills .progress-number-wrapper {
     width: 100%;
     z-index: 10;
 }
 
-.progress-number-mark {
+#my-skills .progress-number-mark {
     margin-bottom: 4px;
     border-radius: 3px;
     background-color: #00d2ff;
@@ -241,8 +241,8 @@ section {
     -webkit-transform: translateX(-50%);
 }
 
-.progress-number-wrapper,
-.progress-number-mark {
+#my-skills .progress-number-wrapper,
+#my-skills .progress-number-mark {
     font-family: Open Sans, sans-serif;
     font-size: 11px;
     line-height: 24px;
@@ -254,7 +254,7 @@ section {
     color: #ffffff;
 }
 
-.down-arrow {
+#my-skills .down-arrow {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     border-top: 3px solid #00d2ff;
@@ -268,12 +268,12 @@ section {
     -webkit-transform: translateX(-50%);
 }
 
-.progress-content-outter {
+#my-skills .progress-content-outter {
     height: 12px;
     background-color: #E1E1E0;
 }
 
-.progress-content {
+#my-skills .progress-content {
     height: 21px;
     background-color: #00d2ff;
     width: 0%;
