@@ -18,13 +18,13 @@ $(document).ready(function() {
 	var scene1TL = new TimelineMax();
 	
 	scene1TL
-		.to($('#who #about-me-wrapper'), 1, {autoAlpha: 0, ease:Power1.easeNone, display: 'none', bottom: 100}, 1.5)
-		.to($('#who #test-wrapper'), 1, {autoAlpha: 1, ease:Power1.easeNone, display: 'block', bottom: 100}, 1.5);
+		.to($('#who #about-me-wrapper'), 1, {autoAlpha: 0, ease:Power1.easeNone, display: 'none', bottom: 400}, 1.5)
+		.to($('#who #test-wrapper'), 1, {autoAlpha: 1, ease:Power1.easeNone, display: 'block', bottom: 400}, 1.5);
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
 	   triggerHook: 0,
-	   duration: "250%"
+	   duration: "100%"
    })
    scene1.setPin("#who")
    scene1.setTween(scene1TL)
