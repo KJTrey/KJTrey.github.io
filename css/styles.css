@@ -1584,6 +1584,13 @@ body{
 /*----------------------
 -----Bio about who------
 ------------------------*/ 
+
+.section-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .bio {
     font-family: 'Montserrat', sans-serif;
     padding: 0px 10%;
