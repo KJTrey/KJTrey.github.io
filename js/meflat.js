@@ -15,35 +15,25 @@ $(document).ready(function() {
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
-	// create a scene
-	var scene1 = new ScrollMagic.Scene({
-		triggerElement: '#who',
-		duration: 1000,	// the scene should last for a scroll distance of 100px
-		triggerHook: 0,
-		//offset: 50		// start this scene after scrolling for 50px
-	})
-	scene1.setPin("#who") // pins the element for the the scene's duration
-	scene1.addTo(controller); // assign the scene to the controller
-	scene1.on("leave", function (event) {
-		$( "#about-me" ).slideToggle( "slow", function() {
-			$( "#test-me" ).slideToggle( "slow", function() {
-				// Animation complete.
-			});
-			var scene2 = new ScrollMagic.Scene({
-				triggerElement: '#who',
-				duration: 1000,	// the scene should last for a scroll distance of 100px
-				triggerHook: 0,
-				//offset: 50		// start this scene after scrolling for 50px
-			})
-			scene2.setPin("#who") // pins the element for the the scene's duration
-			scene2.addTo(controller); // assign the scene to the controller
-			scene2.on("leave", function (event) {
-				$( "#test-me" ).slideToggle( "slow", function() {
-					// Animation complete.
-				});
-			});
-		});
-	});
+	var scene1TL = new TimelineMax();
+	
+	scene1TL
+	   .to($('#who #about-me #bio-title'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	   .to($('#who section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+	   .set($('#who #about-me #bio-title'), {text: "Testing test"})
+	   .set($('#who #about-me #bio-teaser'), {text: "test teaser."})
+	   .fromTo($('#who #about-me #bio-title'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+	   .fromTo($('#who section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+	   .set($('#who #about-me #bio-title'), {autoAlpha: 1}, '+=2');
+	
+   var scene1 = new ScrollMagic.Scene({
+	   triggerElement: '#who',
+	   triggerHook: 0,
+	   duration: "250%"
+   })
+   scene1.setPin("#who")
+   scene1.setTween(scene1TL)
+   scene1.addTo(controller);
 	
 
 
