@@ -221,11 +221,11 @@ var Canvas = function () {
             this.ctx.fillStyle = '#09203f';
             this.ctx.fillText('Lets make waves.', this.canvas.width / 2, this.canvas.height / 4 + size2 / 3);
 
-            var size3 = 12 * this.dpr;
+            var size3 = 14 * this.dpr;
             this.ctx.font = 'normal ' + size3 + 'px Futura';
             this.ctx.textAlign = 'center';
             this.ctx.fillStyle = '#f2e6ef';
-            this.ctx.fillText('(Click and hold to interact)', this.canvas.width / 2, this.canvas.height / 3.5 + size3 / 3);
+            this.ctx.fillText('(Click and hold to interact)', this.canvas.width / 2, this.canvas.height / 3.3 + size3 / 3);
         }
     }, {
         key: 'drawCurve',
