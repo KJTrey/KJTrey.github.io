@@ -2,23 +2,14 @@ $(document).ready(function() {
 	/*MODIFICATION START*/
 	$(document).on('scroll', function(){
 		if($(window).scrollTop() > $('#my-skills').height()){
-	/*MODIFICATION END*/
-		$(".progress-bar").each(function() {
-			$(this).find(".progress-content").animate({
-				width: $(this).attr("data-percentage")
-			},2000);
-
-			$(this).find(".progress-number-mark").animate({
-				left: $(this).attr("data-percentage")
-			},{
-			duration: 2000,
-			step: function(now, fx) {
-				var data = Math.round(now);
-				$(this).find(".percent").html(data + "%");
-			}
+		$(".meter > span").each(function() {
+			$(this)
+				.data("origWidth", $(this).width())
+				.width(0)
+				.animate({
+				width: $(this).data("origWidth") // or + "%" if fluid
+				}, 1200);
 			});
-		});
-	/*MODIFICATION START*/
 		}
 	});
 	/*MODIFICATION END*/
