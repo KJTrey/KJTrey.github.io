@@ -18,8 +18,8 @@ $(document).ready(function() {
 	var scene1TL = new TimelineMax();
 	
 	scene1TL
-	   .to($('#who #about-me'), 1, {opacity: 0, top: 100}, 1.5)
-	   .set($('#who #test-me'), {opacity: 1});
+	   .to($('#who #about-me'), 1, {opacity: 0, bottom: 100})
+	   .set($('#who #test-me'), 1, {opacity: 1, top: 100});
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
