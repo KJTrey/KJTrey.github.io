@@ -22,7 +22,7 @@ $(document).ready(function() {
 		.to($('#who #about-me-wrapper'), 1, {autoAlpha: 0, ease:Power1.easeNone, bottom: 100}, 1.5)
 		.to($('#who #about-me-wrapper'), 1, {display: 'none'}, 1.5)
 		.to($('#who #test-wrapper'), 1, {autoAlpha: 0, display: 'block'}, 1.5)
-		.to($('#who #test-wrapper'), 1, {autoAlpha: 1, ease:Power1.easeNone, bottom: 100}, "-=0.5");
+		.to($('#who #test-wrapper'), 1, {autoAlpha: 1, ease:Power1.easeNone, bottom: 100}, 1.5);
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
