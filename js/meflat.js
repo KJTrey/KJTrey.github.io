@@ -21,7 +21,8 @@ $(document).ready(function() {
 		triggerHook: 0,
 		//offset: 50		// start this scene after scrolling for 50px
 	})
-	scene1.setPin("#who") // pins the element for the the scene's duration
+	scene1.setPin("#who-title") // pins the element for the the scene's duration
+	scene1.setPin("#who-image") // pins the element for the the scene's duration
 	scene1.addTo(controller); // assign the scene to the controller
 
 
