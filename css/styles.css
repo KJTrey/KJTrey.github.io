@@ -161,6 +161,15 @@ section {
     left: 0;
     margin: 0px!important;
 }
+.what-title {
+    font-weight: bold;
+    font-size: 8em;
+    font-family: 'Futura', sans-serif;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
 .icon-title {
     font-size: 1rem!important;
     text-transform: uppercase;
