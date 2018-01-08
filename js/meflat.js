@@ -18,13 +18,8 @@ $(document).ready(function() {
 	var scene1TL = new TimelineMax();
 	
 	scene1TL
-	   .to($('#who #about-me #bio-title'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	   .to($('#who section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	   .set($('#who #about-me #bio-title'), {text: "Testing test"})
-	   .set($('#who #about-me #bio-teaser'), {text: "test teaser."})
-	   .fromTo($('#who #about-me #bio-title'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
-	   .fromTo($('#who section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-	   .set($('#who #about-me #bio-title'), {autoAlpha: 1}, '+=2');
+	   .to($('#who #about-me'), 1, {opacity: 0, top: 100}, 1.5)
+	   .set($('#who #test-me'), {opacity: 1});
 	
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
