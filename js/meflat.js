@@ -37,12 +37,17 @@ $(document).ready(function() {
 	scene1.setPin("#who-statue", {pushFollowers: false})
 	scene1.addTo(controller);
 
+	var whatTween = TimelineMax()
+		.to($("marble-macbook-wrapper"), 1, {top:300})
+		.to($("marble-chrome-wrapper"), 1, {top:300, left: -150})
+		.to($("marble-iphone-wrapper"), 1, {top:300, left: 150});
+
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
 		triggerHook: 1,
 		duration: "300"
 	})
-	scene1.setTween("#marble-macbook-wrapper", {top: 300, scale: 1})
+	scene1.setTween(whatTween)
 	scene1.addTo(controller);
 	
 
