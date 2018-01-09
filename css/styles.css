@@ -314,6 +314,9 @@ section {
     text-align: center;
     bottom: 0px;
 }
+.services-row {
+    margin-top: 100px;
+}
 /*------------------
 ----- tooltips ------
 --------------------*/
