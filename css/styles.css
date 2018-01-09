@@ -195,6 +195,12 @@ section {
     opacity: 0;
 }
 /*====Skill Bar=====*/
+.meter-text {
+    font-weight: 300;
+    font-size: 1em;
+    color: rgba(255,255,255,.7);
+    margin-left: 5px;
+}
 .meter { 
 	height: 24px;  /* Can be anything */
 	position: relative;
