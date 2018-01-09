@@ -272,15 +272,14 @@ section {
 #marble-chrome {
     position: absolute;    
     width: 30%;
-    height: 30%;
     top: 10%;
+    left: 20%;
 }
 #marble-iphone {
     position: absolute;    
-    width: 10%;
-    height: 10%;
-    right: 0px;
-    bottom: 0px;
+    width: 20%;
+    top: 10%;
+    left: 40%;
 }
 /*------------------
 ----- tooltips ------
