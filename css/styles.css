@@ -269,12 +269,16 @@ section {
     margin-bottom: 300px;
     padding: 20% 50%;
 }
-#marble-macbook {
+#marble-macbook-wrapper {
     position: absolute;
+    left: 50%;
+}
+#marble-macbook {
+    position: relative;
     height: 300px;
     width: 300px;
     top: 0;
-    left: 30%;
+    left: -50%;
 }
 #marble-chrome {
     position: absolute;    
