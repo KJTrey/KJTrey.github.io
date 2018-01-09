@@ -316,6 +316,13 @@ section {
 }
 .services-row {
     padding-top: 180px;
+    padding-bottom: 50px;
+}
+.service-text {
+    font-weight: 300;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
 }
 /*------------------
 ----- tooltips ------
