@@ -66,7 +66,7 @@ $(document).ready(function() {
 	} else {
 		whatTween
 			.to($("#marble-macbook-wrapper"), 1, {ease: Power1.easeInOut, yPercent:60}, 0)
-			.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, yPercent:81, left:"18%", scale:1.3}, 0)
+			.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, yPercent:81, left:"19%", scale:1.3}, 0)
 			.to($("#marble-iphone-wrapper"), 1, {ease: Power1.easeInOut, yPercent:62, left:"89%", scale:1.4}, 0);
 	}
 	var scene2 = new ScrollMagic.Scene({
