@@ -24,24 +24,17 @@ $(document).ready(function() {
 
 	/*============================================
 	Scroll magic
-	==============================================
+	==============================================*/
 	// init controller
 	var controller = new ScrollMagic.Controller();
-
-	var scene1TL = new TimelineMax();
-	scene1TL
-		.call(function() {
-			$('#what .about-photo').addClass("animated slideInRight");
-		}, null, null, 2);
 	
    var scene1 = new ScrollMagic.Scene({
-	   triggerElement: '#skill',
-	   triggerHook: 1,
-	   duration: 0
+	   triggerElement: '#who',
+	   triggerHook: 0,
+	   duration: $("#who").height()
    })
-   scene1.setPin("#what")
-   scene1.setTween(scene1TL)
-   scene1.addTo(controller);*/
+   scene1.setPin("#who-statue")
+   scene1.addTo(controller);
 	
 
 	/*============================================
