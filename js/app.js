@@ -48,8 +48,8 @@ $(document).ready(function() {
 	var whatTween = new TimelineMax();
 	whatTween
 		.to($("#marble-macbook-wrapper"), 1, {ease: Power1.easeInOut, yPercent:60}, 0)
-		.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, yPercent:82, left:"100%", xPercent: -100, scale:1.3}, 0)
-		.to($("#marble-iphone-wrapper"), 1, {ease: Power1.easeInOut, yPercent:62, right:"100%", xPercent: 100, scale:1.4}, 0);
+		.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, yPercent:82, left:"-100%", scale:1.3}, 0)
+		.to($("#marble-iphone-wrapper"), 1, {ease: Power1.easeInOut, yPercent:62, right:"100%", scale:1.4}, 0);
 
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
