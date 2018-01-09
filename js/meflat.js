@@ -33,7 +33,7 @@ $(document).ready(function() {
 	   triggerHook: 0,
 	   duration: $("#who").height()
    })
-   scene1.setPin("#who-statue")
+   scene1.setPin("#who-statue", {pushFollowers: false})
    scene1.addTo(controller);
 	
 
