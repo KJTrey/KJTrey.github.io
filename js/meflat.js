@@ -31,7 +31,7 @@ $(document).ready(function() {
    var scene1 = new ScrollMagic.Scene({
 	   triggerElement: '#who',
 	   triggerHook: 0,
-	   duration: "200%"
+	   duration: "100%"
    })
    scene1.setPin("#who-statue", {pushFollowers: false})
    scene1.addTo(controller);
