@@ -265,8 +265,8 @@ section {
 }*/
 #marble-device-wrapper {
     position: relative;
-    margin-top: -240px;
-    margin-bottom: 240px;
+    margin-top: -300px;
+    margin-bottom: 300px;
     padding: 20% 50%;
 }
 #marble-macbook {
@@ -278,13 +278,13 @@ section {
 #marble-chrome {
     position: absolute;    
     width: 26%;
-    top: 15%;
+    top: 18%;
     left: 37%;
 }
 #marble-iphone {
     position: absolute;    
     width: 30%;
-    top: 20%;
+    top: 21%;
     left: 50%;
 }
 /*------------------
