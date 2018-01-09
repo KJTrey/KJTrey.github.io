@@ -175,6 +175,10 @@ section {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.who-wrapper {
+    min-height: 100vh;
+}
 /*------------------
 -- Fluid tooltips --
 --------------------*/
