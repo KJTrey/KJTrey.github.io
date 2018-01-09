@@ -268,20 +268,20 @@ section {
 }
 #marble-macbook {
     position: absolute;
-    top: -10%;
+    top: -100%;
     left: 30%;
     width: 40%;
 }
 #marble-chrome {
     position: absolute;    
     width: 30%;
-    top: 20%;
-    left: 45%;
+    top: -80%;
+    left: 40%;
 }
 #marble-iphone {
     position: absolute;    
     width: 30%;
-    top: 20%;
+    top: -75%;
     left: 50%;
 }
 /*------------------
