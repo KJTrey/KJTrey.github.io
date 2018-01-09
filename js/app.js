@@ -54,9 +54,9 @@ $(document).ready(function() {
 	*/
 
 	whatTween
-		.to($("#marble-macbook-wrapper"), 1, {ease: Power1.easeInOut, top:"60%"}, 0)
-		.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, top:"60%", left:"10%", scale:1.3}, 0)
-		.to($("#marble-iphone-wrapper"), 1, {ease: Power1.easeInOut, top:"60%", left:"90%", scale:1.4}, 0);
+		.to($("#marble-macbook-wrapper"), 1, {ease: Power1.easeInOut, yPercent:60}, 0)
+		.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, yPercent:82, left:"20%", scale:1.3}, 0)
+		.to($("#marble-iphone-wrapper"), 1, {ease: Power1.easeInOut, yPercent:62, left:"85%", scale:1.4}, 0);
 
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
