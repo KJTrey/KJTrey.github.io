@@ -198,7 +198,7 @@ section {
 .meter { 
 	height: 24px;  /* Can be anything */
 	position: relative;
-	background: rgba(16, 68, 110, 0.397);
+	background: rgba(16, 68, 110, 0.4);
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
