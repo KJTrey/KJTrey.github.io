@@ -40,8 +40,8 @@ $(document).ready(function() {
 	var whatTween = new TimelineMax();
 	whatTween
 		.to($("#marble-macbook-wrapper"), 3, {top:300}, 0)
-		.to($("#marble-chrome-wrapper"), 3, {top:300, xPercent: -40}, 0)
-		.to($("#marble-iphone-wrapper"), 3, {top:300, xPercent: 40}, 0);
+		.to($("#marble-chrome-wrapper"), 3, {top:300, xPercent: -100, scale:1.42}, 0)
+		.to($("#marble-iphone-wrapper"), 3, {top:300, xPercent: 100, scale:1.5}, 0);
 
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
