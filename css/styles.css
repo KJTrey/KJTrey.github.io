@@ -1858,9 +1858,17 @@ body{
 /*----------------------
 -----Media Queries------
 ------------------------*/ 
-@media (max-width: 640px){
+@media (max-width: 480px){
 	body {
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .bio {
+        text-align: center !important;
+    }
+}
+@media (min-width: 481px) and (max-width: 640px){
+	body {
+        font-size: 14px;
     }
     .bio {
         text-align: center !important;
