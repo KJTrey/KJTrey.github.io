@@ -1,11 +1,14 @@
 /*MODIFICATION START*/
 $(document).on('scroll', function(){
-	if($(window).scrollTop() > $('#my-skills').height()){
+	var winT = $(window).scrollTop(),
+	winH = $(window).height(),
+	skillsT = $('#my-skills').offset().top;
+	if(winT + winH  > skillsT){
 	$(".meter > span").each(function() {
 		$(this)
 			.animate({
 				width:$(this).attr('data-percent')
-			}, 600);
+			}, 6000);
 		});
 	}
 });
