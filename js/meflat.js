@@ -1,19 +1,19 @@
-$(document).ready(function() {
-	/*MODIFICATION START
-	$(document).on('scroll', function(){
-		if($(window).scrollTop() > $('#my-skills').height()){
-		$(".meter > span").each(function() {
-			$(this)
-				.data("origWidth", $(this).width())
-				.width(0)
-				.animate({
-				width: $(this).data("origWidth") // or + "%" if fluid
-				}, 1200);
-			});
-		}
-	});
-	/*MODIFICATION END*/
+/*MODIFICATION START
+$(document).on('scroll', function(){
+	if($(window).scrollTop() > $('#my-skills').height()){
+	$(".meter > span").each(function() {
+		$(this)
+			.data("origWidth", $(this).width())
+			.width(0)
+			.animate({
+			width: $(this).data("origWidth") // or + "%" if fluid
+			}, 1200);
+		});
+	}
+});
+/*MODIFICATION END*/
 
+$(document).ready(function() {
 	/*============================================
 	Particles Functions
 	==============================================*/
