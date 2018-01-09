@@ -277,13 +277,13 @@ section {
 #marble-chrome {
     position: absolute;    
     width: 30%;
-    top: 20%;
-    left: 33%;
+    top: 25%;
+    left: 35%;
 }
 #marble-iphone {
     position: absolute;    
     width: 30%;
-    top: 40%;
+    top: 50%;
     left: 50%;
 }
 /*------------------
