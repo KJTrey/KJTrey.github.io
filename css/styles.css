@@ -290,16 +290,16 @@ section {
 }
 #marble-chrome {
     position: relative;    
-    width: 220px;
-    height: 220px;
+    width: 210px;
+    height: 210px;
     left: -50%;
-    top: 40px;
+    top: 50px;
 }
 #marble-iphone {
     position: relative;    
     width: 200px;
     height: 200px;
-    top: 100px;
+    top: 80px;
     left: -50%;
 }
 /*------------------
