@@ -266,6 +266,7 @@ section {
 #marble-device-wrapper {
     position: relative;
     margin-top: -240px;
+    margin-bottom: 240px;
 }
 #marble-macbook {
     position: absolute;
