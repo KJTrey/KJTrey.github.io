@@ -1,4 +1,4 @@
-/*MODIFICATION START
+/*MODIFICATION START*/
 $(document).on('scroll', function(){
 	if($(window).scrollTop() > $('#my-skills').height()){
 	$(".meter > span").each(function() {
