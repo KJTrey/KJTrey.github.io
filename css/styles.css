@@ -265,10 +265,11 @@ section {
 }*/
 #marble-device-wrapper {
     position: relative;
+    margin-top: -240px;
 }
 #marble-macbook {
     position: absolute;
-    top: -100%;
+    top: 0;
     left: 30%;
     width: 40%;
 }
