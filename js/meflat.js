@@ -37,7 +37,7 @@ $(document).ready(function() {
 	scene1.setPin("#who-statue", {pushFollowers: false})
 	scene1.addTo(controller);
 
-	var whatTween = TimelineMax();
+	var whatTween = new TimelineMax();
 	whatTween
 		.to($("#marble-macbook-wrapper"), 1, {top:300})
 		.to($("#marble-chrome-wrapper"), 1, {top:300, left: -150})
