@@ -266,8 +266,6 @@ section {
 }*/
 #marble-devices-wrapper {
     position: relative;
-    margin-top: -300px;
-    margin-bottom: 300px;
 }
 #marble-macbook-wrapper {
     position: absolute;
