@@ -256,23 +256,29 @@ section {
   }
 
 
+  /*
 .marble-device {
     position: absolute;
     top: -20px;
     left: 30%;
     width: 40%;
-}
+}*/
 #marble-macbook {
-    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 30%;
+    width: 40%;
 }
 #marble-chrome {
-    width: 80%;
-    height: 80%;
+    position: absolute;    
+    width: 30%;
+    height: 30%;
     top: 10%;
 }
 #marble-iphone {
-    width: 50%;
-    height: 50%;
+    position: absolute;    
+    width: 10%;
+    height: 10%;
     right: 0px;
     bottom: 0px;
 }
