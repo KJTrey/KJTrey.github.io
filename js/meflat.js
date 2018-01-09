@@ -7,7 +7,7 @@ $(document).on('scroll', function(){
 			.width(0)
 			.animate({
 				width:$(this).attr('data-percent')
-			}, 200);
+			}, 600);
 		});
 	}
 });
