@@ -323,6 +323,7 @@ section {
     font-size: 1em;
     color: #fff;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 /*------------------
 ----- tooltips ------
