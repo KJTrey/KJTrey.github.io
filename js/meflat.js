@@ -6,8 +6,8 @@ $(document).on('scroll', function(){
 			.data("origWidth", $(this).width())
 			.width(0)
 			.animate({
-			width: $(this).data("origWidth") // or + "%" if fluid
-			}, 1200);
+				width:$(this).attr('data-percent')
+			}, 200);
 		});
 	}
 });
