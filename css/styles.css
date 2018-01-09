@@ -276,14 +276,14 @@ section {
 }
 #marble-chrome {
     position: absolute;    
-    width: 30%;
-    top: 25%;
-    left: 35%;
+    width: 28%;
+    top: 35%;
+    left: 36%;
 }
 #marble-iphone {
     position: absolute;    
     width: 30%;
-    top: 50%;
+    top: 60%;
     left: 50%;
 }
 /*------------------
