@@ -263,13 +263,13 @@ section {
     left: 30%;
     width: 40%;
 }*/
-#marble-device-wrapper {
+#marble-devices-wrapper {
     position: relative;
     margin-top: -300px;
     margin-bottom: 300px;
     padding: 20% 50%;
 }
-#marble-macbook-wrapper {
+.marble-macbook-wrapper {
     position: absolute;
     left: 50%;
 }
