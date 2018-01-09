@@ -306,6 +306,12 @@ section {
     top: 80px;
     left: -50%;
 }
+.marble-device-text {
+    position: absolute;
+    left: -50%;
+    text-align: center;
+    bottom: 0px;
+}
 /*------------------
 ----- tooltips ------
 --------------------*/
