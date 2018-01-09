@@ -39,13 +39,13 @@ $(document).ready(function() {
 
 	var whatTween = new TimelineMax();
 	whatTween
-		.to($("#marble-macbook-wrapper"), 3, {top:300})
-		.to($("#marble-chrome-wrapper"), 3, {top:300, left: 150})
-		.to($("#marble-iphone-wrapper"), 3, {top:300, right: 150});
+		.to($("#marble-macbook-wrapper"), 3, {top:300}, 0)
+		.to($("#marble-chrome-wrapper"), 3, {top:300, left: 150}, 0)
+		.to($("#marble-iphone-wrapper"), 3, {top:300, right: 150}, 0);
 
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
-		triggerHook: 'onEnter',
+		triggerHook: 0.5,
 		duration: "80%"
 	})
 	scene2.setTween(whatTween)
