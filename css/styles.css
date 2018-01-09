@@ -271,9 +271,10 @@ section {
 }
 #marble-macbook {
     position: absolute;
+    height: 300px;
+    width: 300px;
     top: 0;
     left: 30%;
-    width: 40%;
 }
 #marble-chrome {
     position: absolute;    
