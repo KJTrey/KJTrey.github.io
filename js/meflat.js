@@ -28,13 +28,22 @@ $(document).ready(function() {
 	// init controller
 	var controller = new ScrollMagic.Controller();
 	
-   var scene1 = new ScrollMagic.Scene({
-	   triggerElement: '#who',
-	   triggerHook: 0,
-	   duration: "100%"
-   })
-   scene1.setPin("#who-statue", {pushFollowers: false})
-   scene1.addTo(controller);
+	//Move who statue down
+	var scene1 = new ScrollMagic.Scene({
+		triggerElement: '#who',
+		triggerHook: 0,
+		duration: "100%"
+	})
+	scene1.setPin("#who-statue", {pushFollowers: false})
+	scene1.addTo(controller);
+
+	var scene2 = new ScrollMagic.Scene({
+		triggerElement: '#what-wrapper',
+		triggerHook: 1,
+		duration: "300"
+	})
+	scene1.setTween("#marble-macbook-wrapper", {top: 300, scale: 1})
+	scene1.addTo(controller);
 	
 
 	/*============================================
