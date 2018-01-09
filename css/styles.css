@@ -307,6 +307,7 @@ section {
     left: -50%;
 }
 .marble-device-text {
+    width: 100%;
     position: absolute;
     left: -50%;
     text-align: center;
