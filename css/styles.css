@@ -267,6 +267,7 @@ section {
     position: relative;
     margin-top: -240px;
     margin-bottom: 240px;
+    overflow: auto;
 }
 #marble-macbook {
     position: absolute;
