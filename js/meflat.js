@@ -3,8 +3,6 @@ $(document).on('scroll', function(){
 	if($(window).scrollTop() > $('#my-skills').height()){
 	$(".meter > span").each(function() {
 		$(this)
-			.data("origWidth", $(this).width())
-			.width(0)
 			.animate({
 				width:$(this).attr('data-percent')
 			}, 600);
