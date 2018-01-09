@@ -37,6 +37,14 @@ $(document).ready(function() {
 	scene1.setPin("#who-statue", {pushFollowers: false})
 	scene1.addTo(controller);
 
+	/*
+	var whatTween = new TimelineMax();
+	whatTween
+		.to($("#marble-macbook-wrapper"), 1, {ease: Power1.easeInOut, yPercent:70}, 0)
+		.to($("#marble-chrome-wrapper"), 1, {ease: Power1.easeInOut, yPercent:95, xPercent: -150, scale:1.3}, 0)
+		.to($("#marble-iphone-wrapper"), 1, {ease: Power1.easeInOut, yPercent:75, xPercent: 180, scale:1.4}, 0);
+	*/
+
 	var whatTween = new TimelineMax();
 	whatTween
 		.to($("#marble-macbook-wrapper"), 1, {ease: Power1.easeInOut, yPercent:70}, 0)

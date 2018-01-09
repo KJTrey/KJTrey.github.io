@@ -307,6 +307,7 @@ section {
     left: -50%;
 }
 .marble-device-text {
+    font-size: 1rem;
     width: 100%;
     position: relative;
     left: -50%;
