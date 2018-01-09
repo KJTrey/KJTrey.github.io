@@ -39,9 +39,9 @@ $(document).ready(function() {
 
 	var whatTween = new TimelineMax();
 	whatTween
-		.to($("#marble-macbook-wrapper"), 3, {yPercent:100}, 0)
+		.to($("#marble-macbook-wrapper"), 3, {yPercent:60}, 0)
 		.to($("#marble-chrome-wrapper"), 3, {yPercent:100, xPercent: -100, scale:1.3}, 0)
-		.to($("#marble-iphone-wrapper"), 3, {yPercent:100, xPercent: 100, scale:1.5}, 0);
+		.to($("#marble-iphone-wrapper"), 3, {yPercent:80, xPercent: 100, scale:1.5}, 0);
 
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
