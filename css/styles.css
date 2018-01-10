@@ -98,9 +98,14 @@ a:focus,
 .img-center{
     margin:0 auto;
 }
-
+.padding-top-bottom-small {
+    padding:20px 0;
+}
 .padding-top-bottom {
     padding:50px 0;
+}
+.padding-top-bottom-large {
+    padding:100px 0;
 }
 
 .padding-top {
