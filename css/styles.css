@@ -1169,8 +1169,8 @@ body{
 }
 
 .project-item:hover img {
-	-webkit-transform: translateY(10%);
-	transform: translateY(10%);
+	-webkit-transform: translateY(-10%);
+	transform: translateY(-10%);
 }
 
 
