@@ -1182,15 +1182,15 @@ body{
     top:0;
     left:0;
     background:rgba(0,0,0,0);
-    -webkit-transform:translateY(-100%);
-    transform:translateY(-100%);
+    -webkit-transform:translateY(100%);
+    transform:translateY(100%);
     -webkit-transition:all 0.4s ease-out;
     transition:all 0.4s ease-out;
 }
 
 .project-item:hover .hover-mask {
-    -webkit-transform:translateY(-50px);
-    transform:translateY(-50px);
+    -webkit-transform:translateY(0%);
+    transform:translateY(0%);
 }
 
 .project-item .hover-mask .project-title {
