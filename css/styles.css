@@ -1190,8 +1190,8 @@ body{
 }
 
 .project-item:hover .hover-mask {
-    -webkit-transform:translateY(90%);
-    transform:translateY(90%);
+    -webkit-transform:translateY(80%);
+    transform:translateY(80%);
     
 }
 
@@ -1222,11 +1222,11 @@ body{
 
 .project-item .hover-mask .project-title:after{
     display:block;
-    position:absolute;
+    /*position:absolute;*/
     content: "\f061";
     font-family:'FontAwesome';
-    bottom:20px;
-    left:175px;
+    /*bottom:20px;
+    left:175px;*/
     color:#00496c;
 }
 
