@@ -1190,8 +1190,8 @@ body{
 }
 
 .project-item:hover .hover-mask {
-    -webkit-transform:translateY(-50px);
-    transform:translateY(-50px);
+    -webkit-transform:translateY(90%);
+    transform:translateY(90%);
     
 }
 
