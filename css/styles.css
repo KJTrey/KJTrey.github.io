@@ -1196,7 +1196,7 @@ body{
 }
 
 .project-item .hover-mask .project-title {
-    color:#fff;
+    color:#00496c;
     margin:30px 0 0;
     padding:10px;
     font-family: Futura, 'Montserrat',sans-serif;
@@ -1227,7 +1227,7 @@ body{
     font-family:'FontAwesome';
     bottom:20px;
     left:175px;
-    color:#fff;
+    color:#00496c;
 }
 
 .masonry,
