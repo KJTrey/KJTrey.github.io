@@ -247,7 +247,7 @@ section {
     overflow: hidden;
   }
 
-.work-title {
+#work-title {
     font-weight: bold;
     font-size: 8em;
     font-family: 'Futura', sans-serif;
