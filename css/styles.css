@@ -1162,15 +1162,14 @@ body{
 }
 
 .project-item img {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-    -webkit-transition:-webkit-transform 0.4s ease-out;
-    transition:transform 0.4s ease-out;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .project-item:hover img {
-	-webkit-transform: translateX(50%);
-	transform: translateX(50%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 
