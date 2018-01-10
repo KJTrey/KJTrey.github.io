@@ -1220,7 +1220,7 @@ body{
     transition:all 0.3s ease-out;
 }*/
 
-.project-item .hover-mask:after{
+.project-item .hover-mask .project-title:after{
     display:block;
     position:absolute;
     content: "\f061";
