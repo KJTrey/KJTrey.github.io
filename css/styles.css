@@ -1179,12 +1179,12 @@ body{
     padding:0;
     padding-left:50px;
     width:100%;
-    height:20%;
+    height:10%;
     top:0;
     left:0;
     background:rgba(0,0,0,0);
-    -webkit-transform:translateY(200%);
-    transform:translateY(200%);
+    -webkit-transform:translateY(100%);
+    transform:translateY(100%);
     -webkit-transition:all 0.4s ease-out;
     transition:all 0.4s ease-out;
 }
