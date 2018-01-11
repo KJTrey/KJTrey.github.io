@@ -278,7 +278,7 @@ section {
     left: 50%;
     z-index: 1025;
 }
-#parallelogram-text-rapper {
+#parallelogram-text-wrapper {
     position: absolute;
     left: 50%;
     z-index: 1026;
