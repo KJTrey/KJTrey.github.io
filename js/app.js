@@ -47,10 +47,10 @@ $(document).ready(function() {
 
 	var powersTween = new TimelineMax();
 	powersTween
-		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0);			
+		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, 0);			
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#my-skills',
-		triggerHook: 0.5,
+		triggerHook: 0.7,
 		duration: "50%"
 	});
 	scene2.setTween(powersTween);
@@ -64,15 +64,14 @@ $(document).ready(function() {
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:83, left:"40%"}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:78, left:"80%"}, 0)
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
-			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0);			
+			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, 0);			
 	} else {
 		whatTween
 			.to($("#marble-macbook-wrapper"), 2, {ease: Power1.easeInOut, yPercent:60}, 0)
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:81, left:"19%", scale:1.3}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:62, left:"88%", scale:1.4}, 0)
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
-			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0)		
-			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0);			
+			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, 0)		
 		}
 	var scene3 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
