@@ -270,7 +270,7 @@ section {
     width: 40%;
 }*/
 #parallelogram-container {
-    padding: 40px;
+    padding: 20px 0px 60px 0px;
     position: relative;
 }
 #parallelogram-wrapper {
