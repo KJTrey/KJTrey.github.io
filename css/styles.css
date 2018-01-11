@@ -298,6 +298,7 @@ section {
 	background: #ea839b;
 }
 .parallelogram-text {
+    font-weight: bold;
     width: 20px;
     text-align: center;
     height: 15px;
@@ -305,7 +306,7 @@ section {
     left: -50%;
     background: rgba(0,0,0,0);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .2em;
 }
 
 #what-wrapper {
