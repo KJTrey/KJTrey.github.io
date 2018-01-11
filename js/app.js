@@ -76,7 +76,7 @@ $(document).ready(function() {
 	}
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
-		triggerHook: 0.6,
+		triggerHook: 0.7,
 		duration: "70%"
 	})
 	scene2.setTween(whatTween)
