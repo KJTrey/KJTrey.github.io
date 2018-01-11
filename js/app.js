@@ -47,11 +47,11 @@ $(document).ready(function() {
 
 	var powersTween = new TimelineMax();
 	powersTween
-		.to($("#my-skills"), 2, {css: {opacity: 1}}, 0)
+		.to($("#my-skills"), 3, {css: {opacity: 1}}, 0)
 		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, "+=1");			
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#my-skills',
-		triggerHook: 1,
+		triggerHook: .8,
 		duration: "50%"
 	});
 	scene2.setTween(powersTween);
