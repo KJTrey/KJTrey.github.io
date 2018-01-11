@@ -382,6 +382,7 @@ section {
     font-size: 1em;
     color: #fff;
     padding-bottom: 5px;
+    margin-bottom: 0px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
