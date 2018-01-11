@@ -381,7 +381,7 @@ section {
 .services-row {
     padding-top: 180px;
     padding-bottom: 50px;
-    opacity: 0;
+    opacity: 1;
 }
 .service-title {
     font-weight: 600;
@@ -399,6 +399,7 @@ section {
 }
 .service-column {
     padding-bottom: 20px;
+    opacity: 0;
 }
 /*------------------
 ----- tooltips ------
