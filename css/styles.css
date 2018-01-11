@@ -290,6 +290,13 @@ section {
     left: -50%;
 	background: #ea839b;
 }
+#powers-parallelogram {
+	width: 0px;
+    height: 15px;
+    position: relative;
+    left: -50%;
+	background: #ea839b;
+}
 .parallelogram-text {
     width: 20px;
     text-align: center;

@@ -40,13 +40,24 @@ $(document).ready(function() {
 			triggerElement: '#who',
 			triggerHook: 0,
 			duration: "100%"
-		})
-		scene1.setPin("#who-statue", {pushFollowers: false})
+		});
+		scene1.setPin("#who-statue", {pushFollowers: false});
 		scene1.addTo(controller);
 	}
 
-	var whatTween = new TimelineMax();
+	var powersTween = new TimelineMax();
+	powersTween
+		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0);			
+	var scene2 = new ScrollMagic.Scene({
+		triggerElement: '#my-skills',
+		triggerHook: 0.5,
+		duration: "50%"
+	});
+	scene2.setTween(powersTween);
+	scene2.addTo(controller);
 
+
+	var whatTween = new TimelineMax();
 	if(isMobile) {
 		whatTween
 			.to($("#marble-macbook-wrapper"), 2, {ease: Power1.easeInOut, yPercent:50}, 0)
@@ -62,13 +73,13 @@ $(document).ready(function() {
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
 			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0);			
 	}
-	var scene2 = new ScrollMagic.Scene({
+	var scene3 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
 		triggerHook: 0.5,
 		duration: "50%"
-	})
-	scene2.setTween(whatTween)
-	scene2.addTo(controller);
+	});
+	scene3.setTween(whatTween);
+	scene3.addTo(controller);
 	
 
 	/*============================================
