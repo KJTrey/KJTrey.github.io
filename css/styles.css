@@ -304,6 +304,10 @@ section {
     border-radius: 200px;
     border: 2px solid white;
 }
+.hire-button:hover, .hire-button:focus {
+    color: white;
+    text-decoration: none;
+}
 #marble-devices-wrapper {
     position: relative;
     margin-top: -250px;
