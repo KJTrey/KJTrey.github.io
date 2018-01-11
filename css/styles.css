@@ -225,7 +225,6 @@ section {
     overflow: hidden;
     width: 0px;
   }
-  /* lines on bars
   .meter > span:after {
     content: "";
     position: absolute;
@@ -247,7 +246,7 @@ section {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
-  }*/
+  }
 
 #work-title {
     font-weight: bold;
