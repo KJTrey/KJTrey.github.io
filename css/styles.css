@@ -278,7 +278,9 @@ section {
     left: 50%;
     z-index: 1025;
 }
-#parallelogram-text {
+#parallelogram-text-rapper {
+    position: absolute;
+    left: 50%;
     z-index: 1026;
 }
 #parallelogram {
@@ -287,6 +289,14 @@ section {
     position: relative;
     left: -50%;
 	background: #ea839b;
+}
+#parallelogram-text {
+    width: 20px;
+    text-align: center;
+    height: 15px;
+    position: relative;
+    left: -50%;
+	background: rgba(0,0,0,0);
 }
 
 #what-wrapper {
