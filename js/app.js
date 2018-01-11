@@ -48,7 +48,7 @@ $(document).ready(function() {
 	var powersTween = new TimelineMax();
 	powersTween
 		.to($("#my-skills"), 3, {css: {opacity: 1}}, 0)
-		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, "+=1");			
+		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',});			
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#my-skills',
 		triggerHook: .8,
