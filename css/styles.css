@@ -269,28 +269,28 @@ section {
     left: 30%;
     width: 40%;
 }*/
-#parallelogram-container {
+.parallelogram-container {
     padding: 20px 0px 60px 0px;
     position: relative;
 }
-#parallelogram-wrapper {
+.parallelogram-wrapper {
     position: absolute;
     left: 50%;
     z-index: 1025;
 }
-#parallelogram-text-wrapper {
+.parallelogram-text-wrapper {
     position: absolute;
     left: 50%;
     z-index: 1026;
 }
-#parallelogram {
+#services-parallelogram {
 	width: 0px;
     height: 15px;
     position: relative;
     left: -50%;
 	background: #ea839b;
 }
-#parallelogram-text {
+.parallelogram-text {
     width: 20px;
     text-align: center;
     height: 15px;
