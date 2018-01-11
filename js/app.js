@@ -71,8 +71,9 @@ $(document).ready(function() {
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:81, left:"19%", scale:1.3}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:62, left:"88%", scale:1.4}, 0)
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
+			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0)		
 			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, 0);			
-	}
+		}
 	var scene3 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
 		triggerHook: 0.5,
