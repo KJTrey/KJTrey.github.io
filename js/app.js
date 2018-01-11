@@ -52,13 +52,21 @@ $(document).ready(function() {
 			.to($("#marble-macbook-wrapper"), 2, {ease: Power1.easeInOut, yPercent:50}, 0)
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:83, left:"40%"}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:78, left:"80%"}, 0)
-			.to($(".services-row"), 2, {css: {opacity: 1}}, "-=1.5");
+			.to($(".services-row"), 2, {css: {opacity: 1}}, "-=1.5")
+			.call(function() {
+				//addClass, toggleClass, or your custom logic.  
+				$('#parallelogram').addClass("skew");
+			}, null, null, 2);
 	} else {
 		whatTween
 			.to($("#marble-macbook-wrapper"), 2, {ease: Power1.easeInOut, yPercent:60}, 0)
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:81, left:"19%", scale:1.3}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:62, left:"88%", scale:1.4}, 0)
-			.to($(".services-row"), 2, {css: {opacity: 1}}, "-=1.5");
+			.to($(".services-row"), 2, {css: {opacity: 1}}, "-=1.5")
+			.call(function() {
+				//addClass, toggleClass, or your custom logic.  
+				$('#parallelogram').addClass("skew");
+			}, null, null, 2);
 	}
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
