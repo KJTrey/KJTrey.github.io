@@ -289,11 +289,12 @@ section {
 	background: #ea839b;
 }
 #parallelogram-text {
-	width: auto;
+    width: 20px;
+    text-align: center;
     height: 15px;
     position: relative;
     left: -50%;
-	background: #ea839b;
+	background: rgba(0,0,0,0);
 }
 
 #what-wrapper {
