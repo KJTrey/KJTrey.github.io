@@ -262,7 +262,7 @@ section {
     position: relative;
     margin: 0px;
 }
-  /*
+/*
 .marble-device {
     position: absolute;
     top: -20px;
@@ -291,6 +291,19 @@ section {
     text-align: center;
     position: relative;
     margin: 0px;
+}
+.hire-button {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Futura', sans-serif;
+    color: #fff;
+    width: 100px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 200px;
+    border: 2px solid white;
 }
 #marble-devices-wrapper {
     position: relative;
