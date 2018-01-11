@@ -296,16 +296,19 @@ section {
     font-weight: normal;
     font-size: 1em;
     font-family: 'Futura', sans-serif;
-    color: #fff;
+    color: #ffffff75;
     margin: 0 auto;
     padding: 15px 50px;
     text-align: center;
     position: relative;
     border-radius: 200px;
     border: 2px solid white;
+    -webkit-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
 }
 .hire-button:hover, .hire-button:focus {
-    color: white;
+    padding: 15px 70px;
+    color: #ffffff;
     text-decoration: none;
 }
 #marble-devices-wrapper {
