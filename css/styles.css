@@ -289,7 +289,7 @@ section {
 	background: #ea839b;
 }
 #parallelogram-text {
-	width: 0px;
+	width: auto;
     height: 15px;
     position: relative;
     left: -50%;
