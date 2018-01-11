@@ -276,10 +276,12 @@ section {
 #parallelogram-wrapper {
     position: absolute;
     left: 50%;
+    z-index: 1025;
 }
 #parallelogram-text-rapper {
     position: absolute;
     left: 50%;
+    z-index: 1026;
 }
 #parallelogram {
 	width: 0px;
