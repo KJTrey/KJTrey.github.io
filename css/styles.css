@@ -195,6 +195,8 @@ section {
 .meter-text {
     font-weight: 300;
     font-size: 1em;
+    line-height: 18px;
+    font-size: 14px;
     color: rgba(255,255,255,.7);
     margin-left: 5px;
 }
@@ -216,11 +218,11 @@ section {
     border-bottom-right-radius: 8px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgb(84, 166, 204);
+    background-color: #ea839b;
     background-image: linear-gradient(
       center bottom,
-      rgb(43, 139, 194) 37%,
-      rgb(84, 170, 240) 69%
+      #beb1ed 37%,
+      #ea839b 69%
     );
     box-shadow: 
       inset 0 2px 9px  rgba(255,255,255,0.3),
@@ -229,6 +231,7 @@ section {
     overflow: hidden;
     width: 0px;
   }
+  /* lines on bars
   .meter > span:after {
     content: "";
     position: absolute;
@@ -250,7 +253,7 @@ section {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     overflow: hidden;
-  }
+  }*/
 
 #work-title {
     font-weight: bold;
