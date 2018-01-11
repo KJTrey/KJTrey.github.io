@@ -271,14 +271,23 @@ section {
 }*/
 #parallelogram-wrapper {
     padding: 20px 0px 40px 0px;
+    position: relative;
+    left: 50%;
 }
 #parallelogram {
 	width: 0px;
     height: 15px;
-    margin: 0 auto;
-	-webkit-transform: skew(0deg);
-    -moz-transform: skew(0deg);
-    -o-transform: skew(0deg);
+    position: absolute;
+    top: 0px;
+    left: -50%;
+	background: #ea839b;
+}
+#parallelogram-text {
+	width: 0px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: -50%;
 	background: #ea839b;
 }
 
