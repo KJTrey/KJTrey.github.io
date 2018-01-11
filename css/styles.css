@@ -387,6 +387,7 @@ section {
     font-weight: 600;
     font-size: 1em;
     color: #fff;
+    padding-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -394,7 +395,7 @@ section {
     font-weight: 300;
     font-size: 1em;
     color: #fff;
-    padding: 1px;
+    padding: 0px;
     margin: 0px;
 }
 .service-column {
