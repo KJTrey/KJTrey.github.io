@@ -53,14 +53,14 @@ $(document).ready(function() {
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:83, left:"40%"}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:78, left:"80%"}, 0)
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
-			.to($("#parallelogram"), 2, {ease: Power1.easeInOut, skewY:'20deg',}, 1);			
+			.to($("#parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, "-=1.5");			
 	} else {
 		whatTween
 			.to($("#marble-macbook-wrapper"), 2, {ease: Power1.easeInOut, yPercent:60}, 0)
 			.to($("#marble-chrome-wrapper"), 2, {ease: Power1.easeInOut, yPercent:81, left:"19%", scale:1.3}, 0)
 			.to($("#marble-iphone-wrapper"), 2, {ease: Power1.easeInOut, yPercent:62, left:"88%", scale:1.4}, 0)
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
-			.to($("#parallelogram"), 2, {ease: Power1.easeInOut, skewY:'20deg',}, 2);			
+			.to($("#parallelogram"), 2, {ease: Power1.easeInOut, width: 50, skewY:'30deg',}, "-=1.5");			
 	}
 	var scene2 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
