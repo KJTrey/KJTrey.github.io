@@ -1948,7 +1948,7 @@ body{
 }
 @media (min-width: 641px) and (max-width: 900px){
 	body {
-        font-size: 20px;
+        font-size: 18px;
     }
     .bio {
         text-align: center !important;
@@ -1956,7 +1956,7 @@ body{
 }
 @media (min-width: 901px){
 	body {
-        font-size: 16px;
+        font-size: 14px;
 	}
 }
 @media (max-width: 767px) {
