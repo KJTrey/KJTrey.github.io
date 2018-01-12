@@ -177,6 +177,9 @@ section {
 .who-wrapper {
     min-height: 100vh;
 }
+#about-me-wrapper {
+    opacity: 0;
+}
 /*------------------
 -- Fluid tooltips --
 --------------------*/

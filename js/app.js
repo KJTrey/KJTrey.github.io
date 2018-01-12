@@ -44,18 +44,29 @@ $(document).ready(function() {
 		scene1.setPin("#who-statue", {pushFollowers: false});
 		scene1.addTo(controller);
 	}
+	var bioTween = new TimelineMax();
+	bioTween
+		.to($("#about-me-wrapper"), 3, {css: {opacity: 1}}, 0)
+	var scene2 = new ScrollMagic.Scene({
+		triggerElement: '#about-me-wrapper',
+		triggerHook: .8,
+		duration: "50%"
+	});
+	scene2.setTween(bioTween);
+	scene2.addTo(controller);
+
 
 	var powersTween = new TimelineMax();
 	powersTween
 		.to($("#my-skills"), 3, {css: {opacity: 1}}, 0)
 		.to($("#powers-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, "-=1");			
-	var scene2 = new ScrollMagic.Scene({
+	var scene3 = new ScrollMagic.Scene({
 		triggerElement: '#my-skills',
 		triggerHook: .8,
 		duration: "50%"
 	});
-	scene2.setTween(powersTween);
-	scene2.addTo(controller);
+	scene3.setTween(powersTween);
+	scene3.addTo(controller);
 
 
 	var whatTween = new TimelineMax();
@@ -74,13 +85,13 @@ $(document).ready(function() {
 			.to($(".service-column"), 2, {css: {opacity: 1}}, "-=1.5")
 			.to($("#services-parallelogram"), 2, {ease: Power1.easeInOut, width: 70, skewY:'30deg',}, 0)		
 		}
-	var scene3 = new ScrollMagic.Scene({
+	var scene4 = new ScrollMagic.Scene({
 		triggerElement: '#what-wrapper',
 		triggerHook: 0.5,
 		duration: "50%"
 	});
-	scene3.setTween(whatTween);
-	scene3.addTo(controller);
+	scene4.setTween(whatTween);
+	scene4.addTo(controller);
 	
 
 	/*============================================
