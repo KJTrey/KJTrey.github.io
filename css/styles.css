@@ -1187,7 +1187,7 @@ body{
 #filter-works ul li a:hover{
     font-weight:300;
     background:transparent;
-    color:#333;
+    color:#00496c;
     text-decoration:none;
     background:#fff;
 }
@@ -1195,7 +1195,7 @@ body{
 #filter-works ul li.active a,
 #filter-works ul li:hover a{
     color:#fff;
-    background:#1D2026;
+    background:#00496c;
 }
 
 .masonry-wrapper{
