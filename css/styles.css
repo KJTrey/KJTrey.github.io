@@ -193,7 +193,7 @@ section {
 }
 /*====Skill Bar=====*/
 .meter-text {
-    font-weight: 400;
+    font-weight: 500;
     line-height: 20px;
     font-size: 14px;
     color: #00496c80;
@@ -224,6 +224,7 @@ section {
     position: relative;
     overflow: hidden;
     width: 0px;
+    text-align: left !important;
   }
   .meter > span:after {
     content: "";
