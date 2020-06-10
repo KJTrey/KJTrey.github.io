@@ -1,0 +1,154 @@
+* {
+  transition: all .2s linear;
+}
+
+body {
+  /* background: #b5e5f1; */
+  /* background: #dfe46c; */
+  /* background: #eef38e; */
+  background: #fcffca;
+  font-family: 'Montserrat', sans-serif;
+  /* color: #1b9a88; */
+  color: #00aedc;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 94%;
+  padding: 10px 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 140px;
+  text-align: center;
+  color: #004d63;
+}
+.nav-item:hover {
+  color: #00aedc;
+}
+
+#nav .logo {
+  height: 100px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero {
+  flex-direction: row;
+  padding-top: 20px;
+}
+#hero .image {
+  width: 45%;
+  max-width: 400px;
+}
+#hero .content {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#team {
+  flex-direction: column;
+}
+h1 {
+  font-size: 48px;
+  margin: 8px 0;
+}
+p {
+  color: #004d63;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.sale-banner {
+  display: inline-block;
+  background: #dfe46c;
+  padding: 6px 12px;
+  border-radius: 500px;
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 8px 0
+
+}
+
+.primary-button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+  background: #00aedc;
+  color: #ffffff;
+  border-radius: 500px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  width: auto;
+}
+.primary-button:hover {
+  background: #0092bb;
+}
+.button-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+#buyButton .price {
+  margin-left: 16px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -8px;
+}
+#buyButton .price .old-price {
+  text-decoration: line-through;
+  font-size: .6rem;
+  opacity: .5;
+  font-style: normal;
+  font-weight: normal;
+}
+#buyButton .buy-now {
+  letter-spacing: 2px;
+}
+
+.teams {
+  display: flex;
+  flex-direction: row;
+}
+.teams .team {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255,255,255,.2);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
