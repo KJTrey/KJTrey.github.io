@@ -152,3 +152,16 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+  #hero {
+    flex-direction: column;
+  }
+  .teams {
+    flex-direction: column;
+  }
+  .team {
+    width: 100%;
+  }
+}
