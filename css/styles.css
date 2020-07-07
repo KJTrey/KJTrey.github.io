@@ -692,6 +692,7 @@ body{
     float:none;
 }
 
+
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:active,
@@ -1989,6 +1990,19 @@ body{
     }
 }
 @media (min-width: 901px){
+  li.resume {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 16px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 	body {
         font-size: 14px;
 	}
