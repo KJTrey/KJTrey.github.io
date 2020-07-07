@@ -1995,7 +1995,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 8px 16px;
+    padding: 0 16px;
     border: 1px solid #ffffff;
     border-radius: 8px;
     display: flex;
