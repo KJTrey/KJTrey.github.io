@@ -683,6 +683,7 @@ body{
 }
 
 .navbar-nav {
+  position: relative;
     float:none;
     text-align:center;
 }
@@ -1992,9 +1993,9 @@ body{
 @media (min-width: 901px){
   li.resume {
     position: absolute;
-    top: 0;
+    top: 5%;
     right: 0;
-    height: 100%;
+    height: 90%;
     padding: 0 16px;
     border: 1px solid #ffffff;
     border-radius: 8px;
