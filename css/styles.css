@@ -1991,7 +1991,7 @@ body{
     }
 }
 @media (min-width: 901px){
-  li.resume {
+  li.resume a {
     position: absolute;
     top: 5%;
     right: 0;
